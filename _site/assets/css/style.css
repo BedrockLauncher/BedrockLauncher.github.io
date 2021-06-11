@@ -808,3 +808,32 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+footer {
+  display: none !important; }
+
+.btn {
+  display: none !important; }
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  font-weight: bold;
+  color: white; }
+.main-content img {
+  max-width: 100%; }
+
+body {
+  background-color: #333333; }
+
+.page-header {
+  background-image: url(/assets/images/banners/original_image.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, 0.5); }
+
+.project-tagline {
+  opacity: 1; }

@@ -1,6 +1,6 @@
 title: Bedrock Launcher
 # email: your-email@example.com
-description: An unofficial Minecraft for Windows 10 launcher that enables similar features from the Minecraft Java Edition Launcher
+description: An unofficial Minecraft for Windows 10 launcher
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: carter5467_99
@@ -8,9 +8,9 @@ github_username:  BedrockLauncher
 
 # Build settings
 theme: jekyll-theme-cayman
-show_downloads: false
+show_downloads: true
 plugins:
-  - jekyll-feed
+    - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
