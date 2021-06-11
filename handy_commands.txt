@@ -1,5 +1,0 @@
-// Build with JeKyll and bundler (auto bundle) (recomended)
-bundle exec jekyll build
-
-// Build only with JeKyll
-jekyll build
