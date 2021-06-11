@@ -1,0 +1,263 @@
+@import url("/assets/styles/server.min.css");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#nav-bar-main-header {
+    background: var(--focus-gradient);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#nav-bar-width {
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: var(--max-width);
+}
+
+#nav-bar-left-align {
+    float: left;
+    height: 100%;
+    margin-left: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+#nav-bar-right-align {
+    float: right;
+    height: 100%;
+    margin-right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+#center-links {
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+#logo-link {
+    z-index: 1;
+    padding-right: 5px;
+}
+
+#logo-link-image {
+    width: 30px;
+}
+
+#logo-text {
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    padding: 0px;
+    font-size: 0px;
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    transform: translateX(-40px);
+}
+
+#search-button {
+    height: 20px;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+#search-box {
+    background-color: var(--dark-blue0-translucent0);
+    display: none;
+    width: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    color: white;
+}
+
+#nav-bar-middle-align {
+    width: 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.clickable-main-link-icon {
+    width: 20px;
+}
+
+.main-link-selected .clickable-main-link-icon {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.main-link-selected {
+    border-bottom: 4px var(--off-white1) solid;
+}
+
+.clickable-main-link-text,
+.clickable-main-link:focus-within > .clickable-main-link-text {
+    font-size: 0px;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translateX(-20px) translateY(2px);
+    -moz-transform: translateX(-20px) translateY(2px);
+    -ms-transform: translateX(-20px) translateY(2px);
+    -o-transform: translateX(-20px) translateY(2px);
+    transform: translateX(-20px) translateY(2px);
+    margin-left: 0px;
+}
+
+.clickable-main-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clickable-main-link:hover {
+    background-color: var(--dark-blue0-translucent0);
+}
+
+.clickable-main-link:focus-within {
+    background: none;
+}
+
+/* Space for all icons available */
+@media (max-width: 199px) {
+    .clickable-main-link {
+        display: none;
+    }
+}
+
+/* Space for all icons + 140px + 10px */
+@media (min-width: 360px) {
+    .clickable-main-link:hover > .clickable-main-link-text {
+        font-size: var(--font-size1);
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
+        margin-left: 5px;
+    }
+
+    #nav-bar-left-align:hover > #logo-text {
+        font-size: var(--font-size0);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+        padding: 5px 10px 5px 5px;
+    }
+
+    .clickable-main-link.main-link-selected:hover > .clickable-main-link-text {
+        -webkit-transform: translateX(0px) translateY(2px);
+        -moz-transform: translateX(0px) translateY(2px);
+        -ms-transform: translateX(0px) translateY(2px);
+        -o-transform: translateX(0px) translateY(2px);
+        transform: translateX(0px) translateY(2px);
+    }
+
+    #nav-bar-right-align:hover > #search-box,
+    #nav-bar-right-align:focus-within > #search-box {
+        width: 160px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+}
