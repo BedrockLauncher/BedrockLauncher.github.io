@@ -44,9 +44,9 @@ function windowResize(event) {
     var searchButtonLink = document.getElementById("search-button-link");
     
     if (window.innerWidth < 360) {
-        searchButtonLink.setAttribute("href", "/search/");
+        // searchButtonLink.setAttribute("href", "/search/");
     } else {
-        searchButtonLink.removeAttribute("href");
+        // searchButtonLink.removeAttribute("href");
     }
 }
 

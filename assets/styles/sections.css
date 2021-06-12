@@ -52,3 +52,21 @@ section.main-banner div.main-banner-buttons button {
         margin: 10px 0px 10px 0px;
     }
 }
+
+section.width-limiter {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+section.centerize {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section.side-padder {
+    box-sizing: border-box;
+    padding: 0px 16px 0px 16px;
+}

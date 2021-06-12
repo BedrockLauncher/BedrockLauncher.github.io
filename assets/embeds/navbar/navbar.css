@@ -209,7 +209,7 @@ body {
 }
 
 .clickable-main-link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #353535;
 }
 
 .clickable-main-link:focus-within {
@@ -221,6 +221,10 @@ body {
     .clickable-main-link {
         display: none;
     }
+}
+
+.clickable-main-link img {
+    box-shadow: none;
 }
 
 /* Space for all icons + 140px + 10px */
