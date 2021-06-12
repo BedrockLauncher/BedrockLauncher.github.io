@@ -5,7 +5,7 @@ function windowOnload() {
 
     // only remove link if search box can expand
     windowResize();
-    searchBox.style.display = "block";
+    // searchBox.style.display = "block";
 
     function attemptSearch(event) {
         if (searchBox.value.length > 0) {
@@ -17,11 +17,11 @@ function windowOnload() {
     }
 
     searchButton.addEventListener("click", attemptSearch);
-    searchBox.addEventListener("keyup", function (event) {
+    /*searchBox.addEventListener("keyup", function (event) {
         if (event.keyCode == 13) {
             attemptSearch();
         }
-    });
+    });*/
 
     if (window.parent) {
         var selectedMainUrlClass = "main-link-selected";

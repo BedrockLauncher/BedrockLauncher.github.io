@@ -1,4 +1,4 @@
-@import url("/assets/styles/server.min.css");
+@import url("/assets/styles/server.css");
 
 body {
     margin: 0px;
@@ -7,7 +7,7 @@ body {
 }
 
 #nav-bar-main-header {
-    background: var(--focus-gradient);
+    background: #262626;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -38,7 +38,7 @@ body {
     -moz-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    max-width: var(--max-width);
+    max-width: 600px;
 }
 
 #nav-bar-left-align {
@@ -123,10 +123,11 @@ body {
 }
 
 #search-box {
-    background-color: var(--dark-blue0-translucent0);
+    background-color: #131313;
     display: none;
     width: 0px;
     padding: 0px;
+    height: 32px;
     margin-left: 0px;
     color: white;
 }
@@ -168,7 +169,7 @@ body {
 }
 
 .main-link-selected {
-    border-bottom: 4px var(--off-white1) solid;
+    border-bottom: 4px #006431 solid;
 }
 
 .clickable-main-link-text,
@@ -208,7 +209,7 @@ body {
 }
 
 .clickable-main-link:hover {
-    background-color: var(--dark-blue0-translucent0);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .clickable-main-link:focus-within {
@@ -225,7 +226,7 @@ body {
 /* Space for all icons + 140px + 10px */
 @media (min-width: 360px) {
     .clickable-main-link:hover > .clickable-main-link-text {
-        font-size: var(--font-size1);
+        font-size: 12px;
         opacity: 1;
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
@@ -236,7 +237,7 @@ body {
     }
 
     #nav-bar-left-align:hover > #logo-text {
-        font-size: var(--font-size0);
+        font-size: 16px;
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
