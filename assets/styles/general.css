@@ -1,0 +1,15 @@
+* {
+    transition-duration: 0.2s;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    padding: 40px 0px 0px 0px;
+    margin: 0px;
+    background-color: var(--off-white1);
+    background-color: #323232;
+}

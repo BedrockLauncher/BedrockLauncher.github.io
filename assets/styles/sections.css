@@ -1,0 +1,72 @@
+section.main-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+section.main-banner heading {
+    font-family: MinecraftFive-Bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+section.main-banner sub-title {
+    font-family: "MinecraftFive-Regular";
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+section.main-banner div.main-banner-buttons {
+    margin-top: 40px;
+}
+
+section.main-banner div.main-banner-buttons a {
+    margin: 10px;
+    display: inline-block;
+}
+
+section.main-banner div.main-banner-buttons button {
+    width: 120px;
+}
+
+@media (max-width: 500px) {
+    section.main-banner {
+        font-size: 16px;
+    }
+
+    section.main-banner sub-title {
+        display: none;
+    }
+
+    section.main-banner div.main-banner-buttons a,
+    section.main-banner div.main-banner-buttons a button {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+section.width-limiter {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+section.centerize {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section.side-padder {
+    box-sizing: border-box;
+    padding: 0px 16px 0px 16px;
+}
