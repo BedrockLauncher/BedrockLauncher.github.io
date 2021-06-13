@@ -16,7 +16,7 @@ h4,
 h5,
 h6 {
     font-family: "MinecraftTen";
-    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    text-shadow: 0px var(--shadow-depth-attention) 0px var(--shadow-color-evident);
     margin: 0px;
 }
 
@@ -50,25 +50,25 @@ h6.subtler {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 40px;
+    font-size: var(--font-size-h2);
 }
 
 h3 {
-    font-size: 32px;
+    font-size: var(--font-size-h3);
 }
 
 h4 {
-    font-size: 24px;
+    font-size: var(--font-size-h4);
 }
 
 h5 {
-    font-size: 16px;
+    font-size: var(--font-size-h5);
 }
 
 h6 {
-    font-size: 8px;
+    font-size: var(--font-size-h6);
 }
