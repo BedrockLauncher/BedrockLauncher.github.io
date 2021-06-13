@@ -29,6 +29,10 @@
     --font-size-normal: 12px;
     --font-size-normal-evident: 16px;
     
+    --border-radius-general: 4px;
+    
+    --shadow-depth-general: 6px;
+    
     /* Time */
     --transition-duration-general: 0.2s;
 }
