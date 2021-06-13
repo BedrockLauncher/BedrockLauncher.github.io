@@ -13,9 +13,9 @@ button.generic {
     border: none;
     color: white;
     margin: var(--margin-minor);
-    
+
     box-shadow: var(--main-btn-border);
-    
+
     cursor: pointer;
 }
 
@@ -23,7 +23,9 @@ button.generic:hover {
     background: linear-gradient(var(--main-btn-top-hover), var(--main-btn-bottom-hover));
 }
 
-button.generic:active, button.generic:focus, button.generic:focus-within {
+button.generic:active,
+button.generic:focus,
+button.generic:focus-within {
     box-shadow: var(--main-btn-border-hover);
     background: linear-gradient(var(--main-btn-grad-bottom), var(--main-btn-grad-top));
 }
