@@ -1,5 +1,5 @@
 * {
-    transition-duration: 0.2s;
+    transition-duration: var(--transition-duration-general);
     color: white;
 }
 
@@ -8,8 +8,8 @@
 }
 
 body {
-    padding: 40px 0px 0px 0px;
+    padding: var(--nav-bar-height) 0px 0px 0px;
     margin: 0px;
     background-color: var(--off-white1);
-    background-color: #323232;
+    background-color: var(--flush-content);
 }

@@ -1,50 +1,31 @@
 input[type="text"] {
     border: none;
-    border-radius: 4px;
+    border-radius: var(--border-evident-seperator);
     padding: 0px;
 }
 
 button.generic {
     font-family: "MinecraftTen";
-    text-shadow: 0px 2px 0px #004e26;
-    padding: 11px;
-    font-size: 18px;
-    background: linear-gradient(#009147, #008542);
+    text-shadow: 0px var(--shadow-depth-text) 0px var(--main-btn-text-shadow);
+    padding: var(--main-btn-padding);
+    font-size: var(--font-size-attention);
+    background: linear-gradient(var(--main-btn-grad-top), var(--main-btn-grad-bottom));
     border: none;
     color: white;
-    margin: 5px;
-    
-    box-shadow:
-        0px -3px 0px 0px #27ce40,
-        3px 0px 0px 0px #0c6e3d,
-        0px 3px 0px 0px #064d2a,
-        -3px 0px 0px 0px #0c6e3d,
-        
-        0px -3px 0px 2px black,
-        3px 0px 0px 2px black,
-        0px 3px 0px 2px black,
-        -3px 0px 0px 2px black
-        ;
-    
+    margin: var(--margin-minor);
+
+    box-shadow: var(--main-btn-border);
+
     cursor: pointer;
 }
 
 button.generic:hover {
-    background: linear-gradient(#0a9a50, #0a8f4c);
+    background: linear-gradient(var(--main-btn-top-hover), var(--main-btn-bottom-hover));
 }
 
-button.generic:active, button.generic:focus, button.generic:focus-within {
-    box-shadow:
-        0px -3px 0px 0px #064d2a,
-        3px 0px 0px 0px #0c6e3d,
-        0px 3px 0px 0px #27ce40,
-        -3px 0px 0px 0px #0c6e3d,
-        
-        0px -3px 0px 3px white,
-        3px 0px 0px 3px white,
-        0px 3px 0px 3px white,
-        -3px 0px 0px 3px white
-        ;
-    
-    background: linear-gradient(#008542, #009147);
+button.generic:active,
+button.generic:focus,
+button.generic:focus-within {
+    box-shadow: var(--main-btn-border-hover);
+    background: linear-gradient(var(--main-btn-grad-bottom), var(--main-btn-grad-top));
 }
