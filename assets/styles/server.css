@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
-@import url(embeds.css);
-@import url(general.css);
-@import url(inputs.css);
-@import url(texts.css);
-@import url(fonts.css);
-@import url(sections.css);
-@import url(images.css);
-@import url(spacers.css);
+@import url(embeds.min.css);
+@import url(general.min.css);
+@import url(inputs.min.css);
+@import url(texts.min.css);
+@import url(fonts.min.css);
+@import url(sections.min.css);
+@import url(images.min.css);
+@import url(spacers.min.css);
