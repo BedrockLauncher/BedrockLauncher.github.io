@@ -46,7 +46,7 @@ body {
 
 #logo-link {
     z-index: 1;
-    padding-right: var(--margin-minor);
+    padding: var(--margin-minor);
 }
 
 #logo-link-image {
@@ -65,7 +65,7 @@ body {
 #search-button {
     height: var(--icon-minor);
     margin: 0px;
-    padding: 0px 0px 0px var(--margin-semi-minor);
+    padding: var(--margin-semi-minor);
 }
 
 #search-box {
