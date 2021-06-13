@@ -39,6 +39,8 @@
         3px 0px 0px 3px white,
         0px 3px 0px 3px white,
         -3px 0px 0px 3px white;
+    
+    --shadow-color-evident: rgba(0, 0, 0, 0.8);
 
     /* Sizes / distances */
     --nav-bar-height: 40px;
@@ -47,6 +49,7 @@
     --margin-minor: 5px;
     --margin-semi-minor: 10px;
     --margin-semi-major: 20px;
+    --margin-major: 40px;
 
     --icon-semi-minor: 30px;
     --icon-minor: 20px;
@@ -60,11 +63,15 @@
     --font-size-normal: 12px;
     --font-size-normal-evident: 16px;
     --font-size-attention: 18px;
+    --font-size-heading: 32px;
 
     --border-radius-general: 4px;
 
     --shadow-depth-general: 6px;
+    --shadow-depth-attention: 4px;
     --shadow-depth-text: 2px;
+    
+    --btn-width-attention: 160px;
 
     /* Time */
     --transition-duration-general: 0.2s;
