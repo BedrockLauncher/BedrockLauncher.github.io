@@ -71,10 +71,10 @@
     --font-size-heading: 32px;
     --font-size-h1: 48px;
     --font-size-h2: calc(var(--font-size-h1) - 8px);
-    --font-size-h3: calc(var(--font-size-h1) - (8px * 2));
-    --font-size-h4: calc(var(--font-size-h1) - (8px * 3));
-    --font-size-h5: calc(var(--font-size-h1) - (8px * 4));
-    --font-size-h6: calc(var(--font-size-h1) - (8px * 5));
+    --font-size-h3: calc(var(--font-size-h1) - calc(8px * 2));
+    --font-size-h4: calc(var(--font-size-h1) - calc(8px * 3));
+    --font-size-h5: calc(var(--font-size-h1) - calc(8px * 4));
+    --font-size-h6: calc(var(--font-size-h1) - calc(8px * 5));
 
     --border-radius-general: 4px;
 
