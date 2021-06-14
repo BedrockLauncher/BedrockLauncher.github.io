@@ -40,6 +40,8 @@
         0px 3px 0px 3px white,
         -3px 0px 0px 3px white;
     
+    --shadow-color-non-evident: rgba(0, 0, 0, 0.3);
+    --shadow-color-semi-evident: rgba(0, 0, 0, 0.5);
     --shadow-color-evident: rgba(0, 0, 0, 0.8);
     
     --seperator: #5c5c5c;
@@ -63,6 +65,7 @@
     --border-evident-seperator: 4px;
 
     --font-size-normal: 12px;
+    --font-size-normal-evident-minor: 14px;
     --font-size-normal-evident: 16px;
     --font-size-attention: 18px;
     --font-size-heading: 32px;

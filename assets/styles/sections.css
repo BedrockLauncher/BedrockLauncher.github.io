@@ -12,6 +12,10 @@ section.main-banner {
     background-size: cover;
 }
 
+section.main-banner.dim {
+    box-shadow: inset 0px 0px 0px 100000px var(--shadow-color-non-evident);
+}
+
 section.main-banner heading {
     font-family: MinecraftFive-Bold;
     font-size: var(--font-size-heading);
