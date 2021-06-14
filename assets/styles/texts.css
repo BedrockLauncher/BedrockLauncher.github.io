@@ -61,6 +61,10 @@ p.no-margin {
     margin: 0px;
 }
 
+p.margin-minor {
+    margin: var(--margin-minor);
+}
+
 h1 {
     font-size: var(--font-size-h1);
 }

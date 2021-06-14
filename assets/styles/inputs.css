@@ -13,7 +13,8 @@ input[type="text"] {
     padding: 0px;
 }
 
-button {
+button,
+details.hidden-ans {
     cursor: pointer;
 }
 
@@ -49,10 +50,32 @@ button.formal {
     font-weight: bold;
 }
 
-button.formal:hover {
+details.hidden-ans {
+    background: none;
+    border: 1px solid var(--seperator);
+    padding: var(--margin-minor);
+    font-size: var(--font-size-general);
+    text-align: center;
+}
+
+details.hidden-ans summary {
+    font-weight: bold;
+}
+
+details summary {
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+button.formal:hover,
+details.hidden-ans:hover {
     background-color: var(--flush-button-hover);
 }
 
-button.full-width {
+button.full-width,
+details.hidden-ans {
     width: 100%;
 }
