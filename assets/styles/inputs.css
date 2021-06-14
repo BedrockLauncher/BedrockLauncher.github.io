@@ -60,6 +60,11 @@ details.hidden-ans {
 
 details.hidden-ans summary {
     font-weight: bold;
+    user-select: none;
+}
+
+details.hidden-ans[open] > summary {
+    margin-bottom: var(--margin-major);
 }
 
 details summary {

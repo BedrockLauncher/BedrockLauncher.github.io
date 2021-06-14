@@ -21,7 +21,21 @@
     <section class="side-padder width-limiter">
         <details class="hidden-ans">
             <summary>Why did my worlds disappear?</summary>
-            <p class="margin-minor">asd</p>
+            <p class="margin-minor">If you had Minecraft worlds already created on your PC before installing the launcher, those worlds should have been moved to a separate folder for security reasons. You can find those folders here:</p>
+            <p><code>%userprofile%\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang</code></p>
+            <p>In here, you'll find two folders:</p>
+            <img src="/assets/images/screenshots/two_folders_after_installation.png">
+            <p>Minecraft accesses <code>com.mojang</code> (for settings, worlds, skins, etc..) by default which gets renamed to <code>com.mojang.default</code> during the installation of Bedrock Launcher.</p>
+            <p>To continue using the default installation of Minecraft (from the Microsoft Store), delete the <code>com.mojang</code> folder link and rename <code>com.mojang.default</code> to <code>com.mojang</code>.</p>
+            <p>To use the launcher with the Minecraft worlds from before, create a profile in the launcher, download a version, and play. This will create a folder with your profile name in it, and can be found here:</p>
+            <p><code>%userprofile%\AppData\Roaming\.minecraft_bedrock\installations</code></p>
+            <p>For example, mine is called <code>CoolAbhi1290</code></p>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_folder.png">
+            <br><br>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_in_launcher.png">
+            <p>And inside of this folder will be the folders of your installations. For example, mine are these:</p>
+            <img src="/assets/images/screenshots/version_folders.png">
+            <p>These folders house data of your installations (inside of <code>packageData</code>). Simply move the contents of <code>com.mojang.default</code> to any of these folder's <code>packageData</code> folder to continue playing Minecraft with your worlds.</p>
         </details>
         
         <br>

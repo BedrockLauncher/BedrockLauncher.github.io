@@ -5,6 +5,7 @@ a {
 
 * {
     font-family: "Noto Sans";
+    word-wrap: break-word;
 }
 
 p.shadowed {
@@ -87,4 +88,11 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+code {
+    background-color: var(--flush-button-hover);
+    border-radius: var(--border-radius-general);
+    font-family: courier, monospace;
+    padding: 0 3px;
 }
