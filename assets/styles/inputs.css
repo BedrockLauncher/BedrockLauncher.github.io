@@ -53,7 +53,7 @@ button.formal {
 details.hidden-ans {
     background: none;
     border: 1px solid var(--seperator);
-    padding: var(--margin-minor);
+    padding: var(--margin-minor) var(--margin-major) var(--margin-minor) var(--margin-major);
     font-size: var(--font-size-general);
     text-align: center;
 }
