@@ -4,7 +4,7 @@
 
     --flush-button: #323232;
     --flush-content: #323232;
-    --flush-button-hover: #353535;
+    --flush-button-hover: #5c5c5c;
     --flush-input: #131313;
 
     --evident-selection: #006431;
@@ -64,7 +64,7 @@
     --border-major-seperator: 2px;
     --border-evident-seperator: 4px;
 
-    --font-size-normal: 12px;
+    --font-size-normal: 10px;
     --font-size-normal-evident-minor: 14px;
     --font-size-normal-evident: 16px;
     --font-size-attention: 18px;
@@ -77,6 +77,7 @@
     --font-size-h6: calc(var(--font-size-h1) - calc(8px * 5));
 
     --border-radius-general: 4px;
+    --border-radius-evident: 8px;
 
     --shadow-depth-general: 6px;
     --shadow-depth-attention: 4px;

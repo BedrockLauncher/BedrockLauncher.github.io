@@ -12,6 +12,18 @@ section.main-banner {
     background-size: cover;
 }
 
+section.main-banner.minor {
+    padding: var(--margin-minor);
+}
+
+section.bordered {
+    border-radius: var(--border-radius-evident);
+}
+
+section.verticle {
+    flex-direction: column;
+}
+
 section.main-banner.dim {
     box-shadow: inset 0px 0px 0px 100000px var(--shadow-color-non-evident);
 }
@@ -73,4 +85,14 @@ section.centerize {
 section.side-padder {
     box-sizing: border-box;
     padding: 0px var(--margin-semi-major) 0px var(--margin-semi-major);
+}
+
+section.side-padder.major {
+    box-sizing: border-box;
+    padding: 0px var(--margin-major) 0px var(--margin-major);
+}
+
+section.side-padder.very-major {
+    box-sizing: border-box;
+    padding: 0px var(--margin-major) 0px var(--margin-major);
 }

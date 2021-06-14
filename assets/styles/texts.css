@@ -7,7 +7,9 @@ a {
     font-family: "Noto Sans";
 }
 
-
+p.shadowed {
+    text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
+}
 
 h1,
 h2,
@@ -47,6 +49,16 @@ h5.subtler,
 h6.subtler {
     font-family: "MinecraftFive-Regular";
     text-align: center;
+}
+
+h1.no-margin,
+h2.no-margin,
+h3.no-margin,
+h4.no-margin,
+h5.no-margin,
+h6.no-margin,
+p.no-margin {
+    margin: 0px;
 }
 
 h1 {

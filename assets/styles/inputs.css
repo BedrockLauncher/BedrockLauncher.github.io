@@ -1,7 +1,20 @@
+button.generic.center {
+    margin: 10px auto 10px auto;
+}
+
+button.center {
+    display: block;
+    margin: auto;
+}
+
 input[type="text"] {
     border: none;
     border-radius: var(--border-evident-seperator);
     padding: 0px;
+}
+
+button {
+    cursor: pointer;
 }
 
 button.generic {
@@ -12,11 +25,9 @@ button.generic {
     background: linear-gradient(var(--main-btn-grad-top), var(--main-btn-grad-bottom));
     border: none;
     color: white;
-    margin: var(--margin-minor);
+    margin: 5px;
 
     box-shadow: var(--main-btn-border);
-
-    cursor: pointer;
 }
 
 button.generic:hover {
@@ -28,4 +39,20 @@ button.generic:focus,
 button.generic:focus-within {
     box-shadow: var(--main-btn-border-hover);
     background: linear-gradient(var(--main-btn-grad-bottom), var(--main-btn-grad-top));
+}
+
+button.formal {
+    background: none;
+    border: 1px solid var(--seperator);
+    padding: var(--margin-minor);
+    font-size: var(--font-size-general);
+    font-weight: bold;
+}
+
+button.formal:hover {
+    background-color: var(--flush-button-hover);
+}
+
+button.full-width {
+    width: 100%;
 }
