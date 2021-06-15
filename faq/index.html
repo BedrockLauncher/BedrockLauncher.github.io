@@ -2,9 +2,11 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/assets/styles/server.min.css">
+    <link rel="stylesheet" type="text/css" href="index.min.css">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <script src="/assets/scripts/index.min.js"></script>
+    <script src="index.js"></script>
 
     <title>FAQ - Bedrock Launcher</title>
 </head>
@@ -18,10 +20,30 @@
     <br>
     <br>
 
+    <h2 class="center">Search The FAQ</h2>
+
+    <br>
+
+    <section class="side-padder width-limiter major centerize">
+        <input id="search-box" placeholder="Type to search..." type="text" class="generic full-width">
+        <button id="search-button" class="formal">
+            <img class="clean" src="/assets/images/icons/search-white.png">
+        </button>
+    </section>
+    
+    <br>
+    
+    <section id="results" class="side-padder width-limiter">
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
     <h2 class="center">FAQ Categories</h2>
 
     <br>
-    <br>
+
 
     <a href="/faq/data/">
         <section class="side-padder width-limiter major centerize">
@@ -31,7 +53,7 @@
             </section>
         </section>
     </a>
-    
+
     <br>
     <a href="/faq/accounts/">
         <section class="side-padder width-limiter major centerize">
@@ -41,7 +63,7 @@
             </section>
         </section>
     </a>
-    
+
     <br>
     <a href="/faq/versions/">
         <section class="side-padder width-limiter major centerize">
@@ -51,7 +73,7 @@
             </section>
         </section>
     </a>
-    
+
     <br>
     <a href="/faq/misc/">
         <section class="side-padder width-limiter major centerize">
@@ -61,7 +83,7 @@
             </section>
         </section>
     </a>
-    
+
     <br>
     <br>
 

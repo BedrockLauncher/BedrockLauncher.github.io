@@ -1,0 +1,11 @@
+#search-button {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#search-button img {
+    height: 18px;
+    width: 18px;
+}

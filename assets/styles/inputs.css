@@ -13,6 +13,22 @@ input[type="text"] {
     padding: 0px;
 }
 
+input.generic {
+    background-color: #131313;
+    text-align: center;
+    padding: 4px;
+    height: 30px;
+}
+
+input.generic:focus,
+input.generic:focus-within {
+    border: 1px solid white;
+}
+
+input.full-width {
+    width: 100%;
+}
+
 button,
 details.hidden-ans {
     cursor: pointer;
@@ -48,11 +64,12 @@ button.formal {
     padding: var(--margin-minor);
     font-size: var(--font-size-general);
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 details.hidden-ans {
     background: none;
-    border: 1px solid var(--seperator);
+    border: 1px solid var(--flush-button-border);
     padding: var(--margin-minor) var(--margin-major) var(--margin-minor) var(--margin-major);
     font-size: var(--font-size-general);
     text-align: center;
@@ -80,7 +97,6 @@ details.hidden-ans:hover {
     background-color: var(--flush-button-hover);
 }
 
-button.full-width,
-details.hidden-ans {
+button.full-width {
     width: 100%;
 }

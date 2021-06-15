@@ -1,1 +1,1 @@
-img{max-width:100%;-webkit-border-radius:var(--border-radius-general);-moz-border-radius:var(--border-radius-general);border-radius:var(--border-radius-general);-webkit-box-shadow:0 0 var(--shadow-depth-general) black;-moz-box-shadow:0 0 var(--shadow-depth-general) black;box-shadow:0 0 var(--shadow-depth-general) black}
+img:not(.clean){max-width:100%;border-radius:var(--border-radius-general);box-shadow:0 0 var(--shadow-depth-general) black}
