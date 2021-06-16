@@ -70,30 +70,33 @@ button.formal {
 details.hidden-ans {
     background: none;
     border: 1px solid var(--flush-button-border);
-    padding: var(--margin-minor) var(--margin-major) var(--margin-minor) var(--margin-major);
+    padding: 0px var(--margin-major) 0px var(--margin-major);
     font-size: var(--font-size-general);
     text-align: center;
+    cursor: default;
 }
 
 details.hidden-ans summary {
     font-weight: bold;
     user-select: none;
+    cursor: pointer;
+    padding: 5px;
 }
 
-details.hidden-ans[open] > summary {
+details.hidden-ans[open] {
+    padding: 0px var(--margin-major) var(--margin-minor) var(--margin-major);
+}
+
+details.hidden-ans[open] summary {
     margin-bottom: var(--margin-major);
 }
 
-details summary {
-    list-style: none;
-}
-
-details summary::-webkit-details-marker {
-    display: none;
+details.hidden-ans[open] summary:hover {
+    background-color: var(--flush-button-hover);
 }
 
 button.formal:hover,
-details.hidden-ans:hover {
+details.hidden-ans:not([open]):hover {
     background-color: var(--flush-button-hover);
 }
 
