@@ -7,6 +7,10 @@
     outline: none;
 }
 
+*.no-js-hide {
+    display: none;
+}
+
 body {
     padding: var(--nav-bar-height) 0px 0px 0px;
     margin: 0px;

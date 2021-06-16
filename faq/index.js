@@ -90,17 +90,29 @@ function commitSearch(searchStr) {
         results.removeChild(results.lastChild);
     }
 
-    if (sortedFetchesIndexes.length > 0) {
-        for (var elementIndex in sortedFetchesIndexes) {
-            results.appendChild(fetches[Number(sortedFetchesIndexes[elementIndex])].element);
-            results.appendChild(document.createElement("br"));
+    results.classList.add("centerize");
+    var loader = document.createElement("div");
+    loader.classList.add("loader-generic");
+    results.appendChild(loader);
+
+    setTimeout(function () {
+        while (results.firstChild) {
+            results.removeChild(results.lastChild);
         }
-    } else {
-        var p = document.createElement("p");
-        p.innerText = "No results! Is your spelling correct? Try looking in the FAQ Categories."
-        p.classList.add("center");
-        results.appendChild(p);
-    }
+
+        results.classList.remove("centerize");
+        if (sortedFetchesIndexes.length > 0) {
+            for (var elementIndex in sortedFetchesIndexes) {
+                results.appendChild(fetches[Number(sortedFetchesIndexes[elementIndex])].element);
+                results.appendChild(document.createElement("br"));
+            }
+        } else {
+            var p = document.createElement("p");
+            p.innerText = "No results! Is your spelling correct? Try looking in the FAQ Categories."
+            p.classList.add("center");
+            results.appendChild(p);
+        }
+    }, (Math.random() * 1000) + 500)
 }
 
 function LOCALWindowOnload() {
@@ -123,4 +135,8 @@ function LOCALWindowOnload() {
     });
 }
 
-window.onload = LOCALWindowOnload;
+if (window.onloadArray) {
+    window.onloadArray.push(LOCALWindowOnload);
+} else {
+    window.onloadArray = [LOCALWindowOnload];
+}

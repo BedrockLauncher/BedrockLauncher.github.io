@@ -18,6 +18,27 @@ function indexWindowsOnload() {
 
         elementIndex++;
     }
+    
+    var noJsHiders = document.querySelectorAll(".no-js-hide");
+    console.log(noJsHiders);
+    var noJsHidersIndex = 0;
+    while (noJsHidersIndex < noJsHiders.length) {
+        noJsHiders[noJsHidersIndex].classList.remove("no-js-hide");
+        noJsHidersIndex++;
+    }
+}
+if (window.onloadArray) {
+    window.onloadArray.push(indexWindowsOnload);
+} else {
+    window.onloadArray = [indexWindowsOnload];
 }
 
-window.onload = indexWindowsOnload;
+window.onload = function () {
+    for (var func in onloadArray) {
+        try {
+            onloadArray[func]();
+        } catch (error) {
+            console.warn(`failed ${func} with:\n\n${error}`)
+        }
+    }
+}

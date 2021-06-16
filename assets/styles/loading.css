@@ -1,0 +1,5 @@
+div.loader-generic {
+    background-image: url(/assets/images/icons/loading.gif);
+    width: 28px;
+    height: 28px;
+}
