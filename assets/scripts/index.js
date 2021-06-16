@@ -12,6 +12,10 @@ function indexWindowsOnload() {
                 setInterval(function () {
                     bannerSwitcher.style.backgroundImage = `url(${bannerDir}${banners[bannerIndex % banners.length]})`;
 
+                    // cache for future
+                    var cachedImage = new Image();
+                    cachedImage.src = `${bannerDir}${banners[bannerIndex % banners.length]}`;
+                    
                     bannerIndex++;
                 }, 5000);
             });

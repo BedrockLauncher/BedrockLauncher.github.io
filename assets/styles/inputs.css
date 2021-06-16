@@ -84,7 +84,7 @@ details.hidden-ans summary {
 }
 
 details.hidden-ans[open] {
-    padding: 0px var(--margin-major) var(--margin-minor) var(--margin-major);
+    padding: 0px var(--margin-major) var(--margin-semi-minor) var(--margin-major);
 }
 
 details.hidden-ans[open] summary {
