@@ -9,3 +9,8 @@
     height: 18px;
     width: 18px;
 }
+
+#results {
+    max-height: 50%;
+    overflow-y: auto;
+}

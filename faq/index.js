@@ -91,8 +91,18 @@ function commitSearch(searchStr) {
     }
 
     results.classList.add("centerize");
+    
+    /*
     var loader = document.createElement("div");
     loader.classList.add("loader-generic");
+    results.appendChild(loader);
+    */
+    
+    var loader = document.createElement("video");
+    loader.src = "/assets/images/icons/loading_launcher.mp4";
+    loader.setAttribute("autoplay", "");
+    loader.setAttribute("loop", "");
+    loader.classList.add("loader-generic-new");
     results.appendChild(loader);
 
     setTimeout(function () {
@@ -112,7 +122,7 @@ function commitSearch(searchStr) {
             p.classList.add("center");
             results.appendChild(p);
         }
-    }, (Math.random() * 1000) + 500)
+    }, (Math.random() * 1000) + 1000)
 }
 
 function LOCALWindowOnload() {

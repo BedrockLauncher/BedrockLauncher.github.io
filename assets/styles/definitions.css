@@ -36,10 +36,10 @@
         0px 3px 0px 0px var(--main-btn-top),
         -3px 0px 0px 0px var(--main-btn-left),
 
-        0px -3px 0px 3px white,
-        3px 0px 0px 3px white,
-        0px 3px 0px 3px white,
-        -3px 0px 0px 3px white;
+        0px -3px 0px 2px white,
+        3px 0px 0px 2px white,
+        0px 3px 0px 2px white,
+        -3px 0px 0px 2px white;
     
     --shadow-color-non-evident: rgba(0, 0, 0, 0.3);
     --shadow-color-semi-evident: rgba(0, 0, 0, 0.5);

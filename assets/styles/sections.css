@@ -36,7 +36,8 @@ section.main-banner heading {
 }
 
 section.main-banner sub-title {
-    font-family: "MinecraftFive-Regular";
+    font-family: "Noto Sans";
+    font-weight: bold;
     text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
 }
 
@@ -95,4 +96,30 @@ section.side-padder.major {
 section.side-padder.very-major {
     box-sizing: border-box;
     padding: 0px var(--margin-major) 0px var(--margin-major);
+}
+
+section.side-scroll-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section.side-scroll {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+section.side-scroll-element {
+    flex: 0 0 100%;
+}
+
+section.side-scroll-wrapper button.generic.right-button {
+    align-self: center;
+    margin-left: var(--margin-semi-minor);
+}
+
+section.side-scroll-wrapper button.generic.left-button {
+    align-self: center;
+    margin-right: var(--margin-semi-minor);
 }
