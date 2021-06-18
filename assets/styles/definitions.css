@@ -51,7 +51,9 @@
 
     /* Sizes / distances */
     --nav-bar-height: 40px;
+    
     --max-width: 600px;
+    --max-width-minor: 400px;
 
     --margin-minor: 5px;
     --margin-semi-minor: 10px;
@@ -60,6 +62,7 @@
 
     --icon-semi-minor: 30px;
     --icon-minor: 20px;
+    --icon-featured: 80px;
 
     --input-regular-height: 32px;
 
@@ -68,6 +71,7 @@
     --border-evident-seperator: 4px;
 
     --font-size-normal: 10px;
+    --font-size-semi-normal: 12px;
     --font-size-normal-evident-minor: 14px;
     --font-size-normal-evident: 16px;
     --font-size-attention: 18px;

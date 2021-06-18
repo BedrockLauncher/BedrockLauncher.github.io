@@ -1,7 +1,14 @@
 a {
-    text-decoration: none;
-    font-weight: bold;
+    cursor: pointer;
     color: var(--url-color);
+    text-decoration: none;
+}
+
+a.simple {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
 }
 
 * {
