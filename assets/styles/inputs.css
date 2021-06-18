@@ -1,7 +1,37 @@
+button.generic.center {
+    margin: 10px auto 10px auto;
+}
+
+button.center {
+    display: block;
+    margin: auto;
+}
+
 input[type="text"] {
     border: none;
     border-radius: var(--border-evident-seperator);
     padding: 0px;
+}
+
+input.generic {
+    background-color: #131313;
+    text-align: center;
+    padding: 4px;
+    height: 30px;
+}
+
+input.generic:focus,
+input.generic:focus-within {
+    border: 1px solid white;
+}
+
+input.full-width {
+    width: 100%;
+}
+
+button:not(.disabled),
+details.hidden-ans {
+    cursor: pointer;
 }
 
 button.generic {
@@ -12,20 +42,78 @@ button.generic {
     background: linear-gradient(var(--main-btn-grad-top), var(--main-btn-grad-bottom));
     border: none;
     color: white;
-    margin: var(--margin-minor);
+    margin: 5px;
 
     box-shadow: var(--main-btn-border);
-
-    cursor: pointer;
 }
 
-button.generic:hover {
+button.generic:not(.disabled):hover {
     background: linear-gradient(var(--main-btn-top-hover), var(--main-btn-bottom-hover));
 }
 
-button.generic:active,
-button.generic:focus,
-button.generic:focus-within {
+button.generic:not(.disabled):active {
     box-shadow: var(--main-btn-border-hover);
     background: linear-gradient(var(--main-btn-grad-bottom), var(--main-btn-grad-top));
+}
+
+button.formal {
+    background: none;
+    border: 1px solid var(--seperator);
+    padding: var(--margin-minor);
+    font-size: var(--font-size-general);
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+details.hidden-ans {
+    background: none;
+    border: 1px solid var(--flush-button-border);
+    padding: 0px var(--margin-major) 0px var(--margin-major);
+    font-size: var(--font-size-general);
+    text-align: center;
+    cursor: default;
+}
+
+details.hidden-ans summary {
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    padding: var(--margin-minor);
+}
+
+details.hidden-ans[open] {
+    padding: 0px var(--margin-major) var(--margin-semi-minor) var(--margin-major);
+}
+
+details.hidden-ans[open] summary {
+    margin-bottom: var(--margin-major);
+}
+
+details.hidden-ans[open] summary:hover {
+    background-color: var(--flush-button-hover);
+}
+
+button.formal:hover,
+details.hidden-ans:not([open]):hover {
+    background-color: var(--flush-button-hover);
+}
+
+button.full-width {
+    width: 100%;
+}
+
+button.generic.right-button,
+button.generic.left-button {
+    padding: var(--margin-minor);
+}
+
+button.generic.right-button.disabled,
+button.generic.left-button.disabled {
+    opacity: 0.2;
+}
+
+button.generic.right-button img,
+button.generic.left-button img {
+    width: var(--icon-minor);
+    box-shadow: none;
 }

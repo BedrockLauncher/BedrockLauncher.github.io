@@ -5,3 +5,10 @@
     left: 0px;
     height: var(--nav-bar-height);
 }
+
+/* 40 + 2 + 40 + 263 + 20*/
+
+#footer {
+    width: 100%;
+    height: 365px;
+}

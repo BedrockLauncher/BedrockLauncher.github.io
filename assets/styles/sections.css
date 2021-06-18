@@ -12,6 +12,22 @@ section.main-banner {
     background-size: cover;
 }
 
+section.main-banner.minor {
+    padding: var(--margin-minor);
+}
+
+section.bordered {
+    border-radius: var(--border-radius-evident);
+}
+
+section.verticle {
+    flex-direction: column;
+}
+
+section.main-banner.dim {
+    box-shadow: inset 0px 0px 0px 100000px var(--shadow-color-non-evident);
+}
+
 section.main-banner heading {
     font-family: MinecraftFive-Bold;
     font-size: var(--font-size-heading);
@@ -20,7 +36,8 @@ section.main-banner heading {
 }
 
 section.main-banner sub-title {
-    font-family: "MinecraftFive-Regular";
+    font-family: "Noto Sans";
+    font-weight: bold;
     text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
 }
 
@@ -69,4 +86,40 @@ section.centerize {
 section.side-padder {
     box-sizing: border-box;
     padding: 0px var(--margin-semi-major) 0px var(--margin-semi-major);
+}
+
+section.side-padder.major {
+    box-sizing: border-box;
+    padding: 0px var(--margin-major) 0px var(--margin-major);
+}
+
+section.side-padder.very-major {
+    box-sizing: border-box;
+    padding: 0px var(--margin-major) 0px var(--margin-major);
+}
+
+section.side-scroll-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section.side-scroll {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+section.side-scroll-element {
+    flex: 0 0 100%;
+}
+
+section.side-scroll-wrapper button.generic.right-button {
+    align-self: center;
+    margin-left: var(--margin-semi-minor);
+}
+
+section.side-scroll-wrapper button.generic.left-button {
+    align-self: center;
+    margin-right: var(--margin-semi-minor);
 }

@@ -7,9 +7,14 @@
     outline: none;
 }
 
+*.no-js-hide {
+    display: none;
+}
+
 body {
     padding: var(--nav-bar-height) 0px 0px 0px;
     margin: 0px;
     background-color: var(--off-white1);
     background-color: var(--flush-content);
+    overflow-x: hidden;
 }

@@ -1,13 +1,24 @@
 a {
+    cursor: pointer;
+    color: var(--url-color);
     text-decoration: none;
+}
+
+a.simple {
+    text-decoration: underline;
     font-weight: bold;
+    cursor: pointer;
+    color: white;
 }
 
 * {
     font-family: "Noto Sans";
+    word-wrap: break-word;
 }
 
-
+p.shadowed {
+    text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
+}
 
 h1,
 h2,
@@ -25,7 +36,8 @@ h2.center,
 h3.center,
 h4.center,
 h5.center,
-h6.center {
+h6.center,
+p.center {
     text-align: center;
 }
 
@@ -47,6 +59,20 @@ h5.subtler,
 h6.subtler {
     font-family: "MinecraftFive-Regular";
     text-align: center;
+}
+
+h1.no-margin,
+h2.no-margin,
+h3.no-margin,
+h4.no-margin,
+h5.no-margin,
+h6.no-margin,
+p.no-margin {
+    margin: 0px;
+}
+
+p.margin-minor {
+    margin: var(--margin-minor);
 }
 
 h1 {
@@ -71,4 +97,11 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+code {
+    background-color: var(--flush-button-hover);
+    border-radius: var(--border-radius-general);
+    font-family: courier, monospace;
+    padding: 0 3px;
 }

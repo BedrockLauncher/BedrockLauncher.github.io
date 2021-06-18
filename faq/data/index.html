@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/server.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <script src="/assets/scripts/index.js"></script>
+    <script src="/faq/dist.js"></script>
+
+    <title>Data FAQ - Bedrock Launcher</title>
+</head>
+
+<body>
+    <section style="background-image: url(/assets/images/banners/1.13_technically_updated_java.jpg)" class="main-banner dim">
+        <heading>Data FAQ</heading>
+        <sub-title>Issues with your Minecraft worlds, settings, etc?</sub-title>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="side-padder width-limiter">
+        <details class="hidden-ans">
+            <summary>Why did my worlds disappear?</summary>
+            <p>If you had Minecraft worlds already created on your PC before installing the launcher, those worlds should have been moved to a separate folder for security reasons. You can find those folders here:</p>
+            <p><code>%userprofile%\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang</code></p>
+            <p>In here, you'll find two folders:</p>
+            <img src="/assets/images/screenshots/two_folders_after_installation.png">
+            <p>Minecraft accesses <code>com.mojang</code> (for settings, worlds, skins, etc..) by default which gets renamed to <code>com.mojang.default</code> during the installation of Bedrock Launcher.</p>
+            <p>To continue using the default installation of Minecraft (from the Microsoft Store), delete the <code>com.mojang</code> folder link and rename <code>com.mojang.default</code> to <code>com.mojang</code>.</p>
+            <p>To use the launcher with the Minecraft worlds from before, create a profile in the launcher, download a version, and play. This will create a folder with your profile name in it, and can be found here:</p>
+            <p><code>%userprofile%\AppData\Roaming\.minecraft_bedrock\installations</code></p>
+            <p>For example, mine is called <code>CoolAbhi1290</code></p>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_folder.png">
+            <br><br>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_in_launcher.png">
+            <p>And inside of this folder will be the folders of your installations. For example, mine are these:</p>
+            <img src="/assets/images/screenshots/version_folders.png">
+            <p>These folders house data of your installations (inside of <code>packageData</code>). Simply move the contents of <code>com.mojang.default</code> to any of these folder's <code>packageData</code> folder to continue playing Minecraft with your worlds.</p>
+        </details>
+        
+        <br>
+        <details class="hidden-ans">
+            <summary>Why do my worlds not show up sometimes?</summary>
+            <p>When you create a profile in the launcher, download a version, and play it, a folder is created with your profile name in it, and can be found here:</p>
+            <p><code>%userprofile%\AppData\Roaming\.minecraft_bedrock\installations</code></p>
+            <p>For example, mine is called <code>CoolAbhi1290</code></p>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_folder.png">
+            <br><br>
+            <img src="/assets/images/screenshots/coolabhi1290_profile_in_launcher.png">
+            <p>And inside of this folder will be the folders of your installations. For example, mine are these:</p>
+            <img src="/assets/images/screenshots/version_folders.png">
+            <p>These folders house data of your installations (inside of <code>packageData</code>). Simply move the contents of <code>com.mojang.default</code> to any of these folder's <code>packageData</code> folder to continue playing Minecraft with your worlds.</p>
+            <p>So, installations can only access data from their assigned folders. However, there is a way of accessing the same worlds from the same folder, and can be done so by reading the "How can I access my same worlds in diffrent installations?"</p>
+        </details>
+        
+        <br>
+        <details class="hidden-ans">
+            <summary>How do I transfer my worlds between versions?</summary>
+            <p>Read the "Why do my worlds not show up sometimes?" FAQ to understand how certain insallations access certain folders.</p>
+            <p>It's pretty straight-forward, just move the world folders, which can be found in <code>/packageData/minecraftWorlds/</code> to a diffrent installation folder.</p>
+        </details>
+        
+        <br>
+        <details class="hidden-ans">
+            <summary>How can I access my same worlds in diffrent installations?</summary>
+            <p>Read the "Why do my worlds not show up sometimes?" FAQ to understand how certain insallations access certain folders.</p>
+            <p>Pick an installation folder that you desire all versions to access. For example, I created a folder called <code>Abhi's Worlds</code> and transfered all my worlds to it.</p>
+            <img src="/assets/images/screenshots/custom_installation_folder.png">
+            <p>Now, go to the installations tab</p>
+            <img src="/assets/images/screenshots/installations_tab.png">
+            <p>Click the three dots (to open installation configurations)</p>
+            <img src="/assets/images/screenshots/installations_settings.png">
+            <p>In the <code>DIRECTORY</code> input, type in your folder's name. In my case, it is <code>Abhi's Folders</code>.</p>
+            <img src="/assets/images/screenshots/installation_directory.png">
+            <p>Finally, click save!</p>
+            <img src="/assets/images/screenshots/installation_save.png">
+            <p>Repeat this proccess for each version that you want to be able to access those worlds. In my case, I did it for all versions to mimic Minecraft Java's behaviour.</p>
+        </details>
+        
+        <br>
+        <details class="hidden-ans">
+            <summary>Why do my settings keep resetting?</summary>
+            <p>The main reason behind this could be the same as what happens with the Minecraft Java Launcher: diffrent versions parse settings diffrently, and reset some as they see fit. There is nothing you can do about this.</p>
+            <p>One other contributing reason could be that diffrent installations are accessing diffrent insallation folders with diffrent settings. Read "Why do my worlds not show up sometimes?" for more info.</p>
+        </details>
+    </section>
+    
+    <br>
+    <br>
+
+    <embed src="/assets/embeds/navbar/index.html" id="nav-bar">
+    <embed src="/assets/embeds/footer/index.html" id="footer">
+</body>
+
+</html>
