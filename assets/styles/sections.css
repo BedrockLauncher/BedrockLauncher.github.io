@@ -16,6 +16,23 @@ section.main-banner.minor {
     padding: var(--margin-minor);
 }
 
+section.main-banner section.main-banner-socials {
+    margin-top: var(--margin-major);
+}
+
+section.main-banner section.main-banner-socials a {
+    margin: 0px var(--margin-semi-minor) 0px var(--margin-semi-minor);
+}
+
+section.main-banner section.main-banner-socials a button {
+    padding: var(--margin-minor);
+}
+
+section.main-banner section.main-banner-socials a button img {
+    box-shadow: none;
+    width: var(--icon-semi-minor);
+}
+
 section.bordered {
     border-radius: var(--border-radius-evident);
 }
@@ -41,16 +58,16 @@ section.main-banner sub-title {
     text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
 }
 
-section.main-banner div.main-banner-buttons {
+section.main-banner section.main-banner-buttons {
     margin-top: var(--margin-major);
 }
 
-section.main-banner div.main-banner-buttons a {
+section.main-banner section.main-banner-buttons a {
     margin: var(--margin-semi-minor);
     display: inline-block;
 }
 
-section.main-banner div.main-banner-buttons button {
+section.main-banner section.main-banner-buttons button {
     width: var(--btn-width-attention);
 }
 
@@ -63,8 +80,8 @@ section.main-banner div.main-banner-buttons button {
         display: none;
     }
 
-    section.main-banner div.main-banner-buttons a,
-    section.main-banner div.main-banner-buttons a button {
+    section.main-banner section.main-banner-buttons a,
+    section.main-banner section.main-banner-buttons a button {
         width: 100%;
         margin: var(--margin-semi-minor) 0px var(--margin-semi-minor) 0px;
     }
