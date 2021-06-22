@@ -82,9 +82,9 @@ function indexWindowsOnload() {
         }
        
         var rightImage = document.createElement("img");
-        rightImage.src = "/assets/images/icons/right_arrow.png";
+        rightImage.src = "/assets/images/icons/right_arrow.svg";
         var leftImage = document.createElement("img");
-        leftImage.src = "/assets/images/icons/left_arrow.png";
+        leftImage.src = "/assets/images/icons/left_arrow.svg";
         
         rightButton.appendChild(rightImage);
         leftButton.appendChild(leftImage);
