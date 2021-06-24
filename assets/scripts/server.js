@@ -1,3 +1,5 @@
+var module = {};
+
 function serve(url) {
     try {
         var script = document.createElement("script");
@@ -16,7 +18,8 @@ const toServeScripts = [
 
     // open source scripts
     "https://unpkg.com/showdown/dist/showdown.min.js",
-    "https://unpkg.com/fuzzysort/fuzzysort.js"
+    "https://unpkg.com/fuzzysort/fuzzysort.js",
+    "https://unpkg.com/fuse.js/dist/fuse.js"
 ]
 
 for (var scriptIndex in toServeScripts) {
