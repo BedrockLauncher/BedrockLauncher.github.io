@@ -24,17 +24,19 @@ body {
 #nav-bar-left-align {
     float: left;
     height: 100%;
-    margin-left: var(--margin-minor);
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-items: center;
+    align-items: center;
 }
 
 #nav-bar-right-align {
     float: right;
     height: 100%;
-    margin-right: var(--margin-semi-minor);
     display: flex;
     flex-direction: row-reverse;
+    justify-items: center;
+    align-items: center;
 }
 
 #center-links {
@@ -45,8 +47,10 @@ body {
 }
 
 #logo-link {
-    z-index: 1;
-    padding: var(--margin-minor) var(--margin-minor) var(--margin-minor) 0px;
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
+    margin: 0px;
+    padding: var(--margin-minor);
 }
 
 #logo-link-image {
@@ -63,9 +67,10 @@ body {
 }
 
 #search-button {
-    height: var(--icon-minor);
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
     margin: 0px;
-    padding: var(--margin-semi-minor) 0px var(--margin-semi-minor) var(--margin-semi-minor);
+    padding: var(--margin-minor);
 }
 
 #search-box {
@@ -87,7 +92,8 @@ body {
 }
 
 .clickable-main-link-icon {
-    width: 20px;
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
 }
 
 .main-link-selected .clickable-main-link-icon {
@@ -135,10 +141,10 @@ body {
     box-shadow: none;
 }
 
-/* Space for all icons + 140px + 10px */
-@media (min-width: 360px) {
+@media (min-width: 600px) {
     .clickable-main-link:hover > .clickable-main-link-text {
-        font-size: var(--font-size-normal-evident-minor);
+        font-size: var(--font-size-normal-evident);
+        font-family: "MinecraftFive-Bold";
         opacity: 1;
         transform: translateX(0px);
         margin-left: var(--margin-minor);

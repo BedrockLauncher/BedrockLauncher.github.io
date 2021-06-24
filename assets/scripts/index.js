@@ -1,4 +1,4 @@
-function indexWindowsOnload() {
+window.addEventListener("load", function () {
     var bannerDir = "/assets/images/banners/";
     var bannerSwitchers = document.getElementsByClassName("banner-swapping");
     var elementIndex = 0;
@@ -104,7 +104,8 @@ function indexWindowsOnload() {
         
         sideScrollersIndex++;
     }
-}
+});
+/*
 if (window.onloadArray) {
     window.onloadArray.push(indexWindowsOnload);
 } else {
@@ -120,3 +121,4 @@ window.onload = function () {
         }
     }
 }
+*/

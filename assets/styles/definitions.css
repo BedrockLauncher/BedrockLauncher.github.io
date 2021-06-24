@@ -50,19 +50,18 @@
     --url-color: #196d17;
 
     /* Sizes / distances */
-    --nav-bar-height: 40px;
+    --nav-bar-height: 48px;
     
     --max-width: 600px;
     --max-width-minor: 400px;
 
-    --margin-minor: 5px;
-    --margin-semi-minor: 10px;
+    --margin-minor: 8px;
+    --margin-semi-minor: 16px;
     --margin-semi-major: 20px;
     --margin-major: 40px;
 
-    --icon-semi-minor: 30px;
-    --icon-minor: 20px;
-    --icon-semi-minor: 30px;
+    --icon-minor: 16px;
+    --icon-semi-minor: 32px;
     --icon-featured: 80px;
 
     --input-regular-height: 32px;
@@ -71,7 +70,7 @@
     --border-major-seperator: 2px;
     --border-evident-seperator: 4px;
 
-    --font-size-normal: 10px;
+    --font-size-normal: 8px;
     --font-size-semi-normal: 12px;
     --font-size-normal-evident-minor: 14px;
     --font-size-normal-evident: 16px;
