@@ -39,9 +39,7 @@ body {
 
 #logo-link {
     margin: 0px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    padding: 4px;
 }
 
 #logo-link-image {
