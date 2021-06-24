@@ -11,14 +11,13 @@ function serve(url) {
 }
 
 const toServeScripts = [
-    // local scripts
+    // internal scripts
     "/assets/scripts/banner_switching.js",
     "/assets/scripts/no-js-hiders.js",
     "/assets/scripts/side_scroller.js",
 
-    // open source scripts
+    // external scripts
     "https://unpkg.com/showdown/dist/showdown.min.js",
-    "https://unpkg.com/fuzzysort/fuzzysort.js",
     "https://unpkg.com/fuse.js/dist/fuse.js"
 ]
 

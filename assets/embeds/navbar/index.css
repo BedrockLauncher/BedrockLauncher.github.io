@@ -30,15 +30,6 @@ body {
     align-items: center;
 }
 
-#nav-bar-right-align {
-    float: right;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-items: center;
-    align-items: center;
-}
-
 #center-links {
     margin: auto;
     display: block;
@@ -47,19 +38,19 @@ body {
 }
 
 #logo-link {
-    height: var(--icon-semi-minor);
-    width: var(--icon-semi-minor);
     margin: 0px;
-    padding: var(--margin-minor);
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 #logo-link-image {
-    width: var(--icon-semi-minor);
+    width: 24px;
+    height: 24px;
 }
 
 #logo-text {
     color: white;
-    font-weight: bold;
     opacity: 0;
     padding: 0px;
     font-size: 0px;
@@ -67,8 +58,8 @@ body {
 }
 
 #search-button {
-    height: var(--icon-semi-minor);
-    width: var(--icon-semi-minor);
+    height: var(--icon-minor);
+    width: var(--icon-minor);
     margin: 0px;
     padding: var(--margin-minor);
 }
@@ -83,17 +74,17 @@ body {
     color: white;
 }
 
-#nav-bar-middle-align {
+#nav-bar-right-align {
     width: var(--margin-minor);
     flex: 1;
     align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .clickable-main-link-icon {
-    height: var(--icon-semi-minor);
-    width: var(--icon-semi-minor);
+    height: var(--icon-minor);
+    width: var(--icon-minor);
 }
 
 .main-link-selected .clickable-main-link-icon {
@@ -143,15 +134,15 @@ body {
 
 @media (min-width: 600px) {
     .clickable-main-link:hover > .clickable-main-link-text {
-        font-size: var(--font-size-normal-evident);
-        font-family: "MinecraftFive-Bold";
+        font-size: var(--font-size-semi-normal);
+        font-family: "Minecraft";
         opacity: 1;
         transform: translateX(0px);
         margin-left: var(--margin-minor);
     }
 
     #nav-bar-left-align:hover > #logo-text {
-        font-size: var(--font-size-normal-evident);
+        font-size: var(--font-size-semi-normal);
         transform: translateX(0px);
         opacity: 1;
         padding: var(--margin-minor) var(--margin-semi-minor) var(--margin-minor) var(--margin-minor);
@@ -159,12 +150,5 @@ body {
 
     .clickable-main-link.main-link-selected:hover > .clickable-main-link-text {
         transform: translateX(0px) translateY(var(--border-major-seperator));
-    }
-
-    #nav-bar-right-align:hover > #search-box,
-    #nav-bar-right-align:focus-within > #search-box {
-        width: 160px;
-        margin-left: var(--margin-semi-minor);
-        padding: var(--margin-semi-minor);
     }
 }
