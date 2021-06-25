@@ -5,11 +5,20 @@ section.main-banner {
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding: var(--margin-major) var(--margin-semi-major) var(--margin-major) var(--margin-semi-major);
+    padding: var(--margin-major-evident) var(--margin-semi-major) var(--margin-major-evident) var(--margin-semi-major);
     box-sizing: border-box;
     position: relative;
     background-position: center;
     background-size: cover;
+}
+
+section.main-banner > img {
+    box-shadow: none;
+    width: 100%;
+    max-width: var(--max-width);
+    display: block;
+    margin: auto;
+    margin-bottom: var(--margin-semi-minor);
 }
 
 section.main-banner.minor {
@@ -17,7 +26,13 @@ section.main-banner.minor {
 }
 
 section.main-banner section.main-banner-socials {
-    margin-top: var(--margin-major);
+    margin-top: var(--margin-semi-major);
+}
+
+@media (max-width: 350px) {
+    section.main-banner section.main-banner-socials {
+        display: none;
+    }
 }
 
 section.main-banner section.main-banner-socials a {
@@ -53,8 +68,7 @@ section.main-banner heading {
 }
 
 section.main-banner sub-title {
-    font-family: "Noto Sans";
-    font-weight: bold;
+    font-family: "Minecraft";
     text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
 }
 

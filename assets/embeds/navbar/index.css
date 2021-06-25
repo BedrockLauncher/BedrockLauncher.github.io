@@ -18,16 +18,31 @@ body {
     height: var(--nav-bar-height);
     display: flex;
     flex-direction: row;
-    max-width: var(--max-width);
+    max-width: var(--max-width-major);
 }
 
 #nav-bar-left-align {
-    float: left;
     height: 100%;
     display: flex;
-    flex-direction: row-reverse;
     justify-items: center;
     align-items: center;
+}
+
+#nav-bar-middle-align {
+    flex: 1;
+    display: block;
+}
+
+#nav-bar-middle-align a img {
+    display: block;
+    margin: auto;
+}
+
+#nav-bar-right-align {
+    flex-flow: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #center-links {
@@ -39,25 +54,31 @@ body {
 
 #logo-link {
     margin: 0px;
-    padding: 4px;
+    height: 100%;
+    display: flex;
+    flex: 1;
 }
 
-#logo-link-image {
-    width: 24px;
-    height: 24px;
+#logo-link-icon {
+    height: var(--icon-semi-minor);
+    align-self: center;
+    padding: var(--margin-minor);
 }
 
-#logo-text {
-    color: white;
-    opacity: 0;
-    padding: 0px;
-    font-size: 0px;
-    transform: translateX(-40px);
+#logo-link-icon-text {
+    height: var(--icon-semi-minor);
+    align-self: center;
+}
+
+@media (max-width: 620px) {
+    #nav-bar-middle-align a img {
+        display: none;
+    }
 }
 
 #search-button {
-    height: var(--icon-minor);
-    width: var(--icon-minor);
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
     margin: 0px;
     padding: var(--margin-minor);
 }
@@ -72,17 +93,9 @@ body {
     color: white;
 }
 
-#nav-bar-right-align {
-    width: var(--margin-minor);
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .clickable-main-link-icon {
-    height: var(--icon-minor);
-    width: var(--icon-minor);
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
 }
 
 .main-link-selected .clickable-main-link-icon {
@@ -119,20 +132,13 @@ body {
     background: none;
 }
 
-/* Space for all icons available */
-@media (max-width: 199px) {
-    .clickable-main-link {
-        display: none;
-    }
-}
-
 .clickable-main-link img {
     box-shadow: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 350px) and (max-width: 620px), (min-width: 800px) {
     .clickable-main-link:hover > .clickable-main-link-text {
-        font-size: var(--font-size-semi-normal);
+        font-size: var(--font-normal-evident);
         font-family: "Minecraft";
         opacity: 1;
         transform: translateX(0px);
@@ -140,7 +146,7 @@ body {
     }
 
     #nav-bar-left-align:hover > #logo-text {
-        font-size: var(--font-size-semi-normal);
+        font-size: var(--font-normal-evident);
         transform: translateX(0px);
         opacity: 1;
         padding: var(--margin-minor) var(--margin-semi-minor) var(--margin-minor) var(--margin-minor);

@@ -50,15 +50,17 @@
     --url-color: #196d17;
 
     /* Sizes / distances */
-    --nav-bar-height: 32px;
+    --nav-bar-height: 48px;
     
-    --max-width: 600px;
-    --max-width-minor: 400px;
+    --max-width: 640px;
+    --max-width-minor: 480px;
+    --max-width-major: 820px;
 
     --margin-minor: 8px;
     --margin-semi-minor: 16px;
     --margin-semi-major: 20px;
     --margin-major: 40px;
+    --margin-major-evident: 64px;
 
     --icon-minor: 16px;
     --icon-semi-minor: 32px;
