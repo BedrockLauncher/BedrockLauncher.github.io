@@ -108,6 +108,7 @@ body {
 
 .clickable-main-link-text,
 .clickable-main-link:focus-within > .clickable-main-link-text {
+    transition-duration: var(--transition-duration-general);
     font-size: 0px;
     color: white;
     opacity: 0;
@@ -122,6 +123,7 @@ body {
     padding: 10px;
     height: var(--nav-bar-height);
     box-sizing: border-box;
+    transition-duration: var(--transition-duration-general);
 }
 
 .clickable-main-link:hover {
@@ -138,6 +140,7 @@ body {
 
 @media (min-width: 350px) and (max-width: 620px), (min-width: 800px) {
     .clickable-main-link:hover > .clickable-main-link-text {
+        transition-duration: var(--transition-duration-general);
         font-size: var(--font-normal-evident);
         font-family: "Minecraft";
         opacity: 1;
