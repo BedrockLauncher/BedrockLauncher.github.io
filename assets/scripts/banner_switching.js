@@ -9,12 +9,15 @@ window.addEventListener("load", function () {
             .then(banners => {
                 var bannerIndex = Math.floor(Math.random() * (banners.length + 1));
 
+                var cachedImage = new Image();
+                cachedImage.src = `${bannerDir}${banners[bannerIndex % banners.length]}`;
+
                 setInterval(function () {
                     bannerSwitcher.style.backgroundImage = `url(${bannerDir}${banners[bannerIndex % banners.length]})`;
 
                     bannerIndex++;
 
-                    var cachedImage = new Image();
+                    cachedImage = new Image();
                     cachedImage.src = `${bannerDir}${banners[bannerIndex % banners.length]}`;
                 }, 5000);
             });
