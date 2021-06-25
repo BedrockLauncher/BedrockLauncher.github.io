@@ -13,7 +13,7 @@ function serve(url) {
 const toServeScripts = [
     // internal scripts
     "/assets/scripts/banner_switching.js",
-    "/assets/scripts/no-js-hiders.js",
+    "/assets/scripts/no-js-hiders.min.js",
     "/assets/scripts/side_scroller.js",
 
     // external scripts
