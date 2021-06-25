@@ -1,0 +1,15 @@
+@import url(/assets/styles/server.min.css);
+
+#search-button {
+    padding: 4px;
+    margin-left: 10px;
+}
+
+#search-button img {
+    height: 32px;
+    width: 32px;
+}
+
+#search-box {
+    height: 42px;
+}
