@@ -1,31 +1,8 @@
 var fetchablePaths = [
-    "beta",
-    "stable"
+    "https://api.github.com/repos/BedrockLauncher/BedrockLauncher/releases",
+    "https://api.github.com/repos/BedrockLauncher/BedrockLauncher-Beta/releases"
 ];
 var fetches = [];
-
-var fetchIndex = 0;
-while (fetchIndex < fetchablePaths.length) {
-    fetch(`/releases/${fetchablePaths[fetchIndex]}/index.html`).then(function (response) {
-        return response.text();
-    }).then(function (text) {
-        var dummyElement = document.createElement("div");
-        dummyElement.innerHTML = text;
-        queryResult = dummyElement.querySelectorAll(".hidden-ans");
-        var queryIndex = 0;
-        while (queryIndex < queryResult.length) {
-            var object = {};
-            object.element = queryResult[queryIndex];
-            object.searchable = queryResult[queryIndex].innerText;
-
-            fetches = fetches.concat(object);
-
-            queryIndex++;
-        }
-    });
-
-    fetchIndex++;
-}
 
 function commitSearch(searchStr) {
     var results = document.getElementById("results");
@@ -78,7 +55,47 @@ function commitSearch(searchStr) {
     }, (Math.random() * 1000) + 1000)
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("load", async function () {
+    var fetchIndex = 0;
+    while (fetchIndex < fetchablePaths.length) {
+        // emulate fetch to make this old code work
+
+        var toFetchUrl = fetchablePaths[fetchIndex];
+        var releasesFetch = await fetch(toFetchUrl);
+        var releasesJson = await releasesFetch.json();
+
+        for (var releaseIndex in releasesJson) {
+            var object = {};
+
+            var release = releasesJson[releaseIndex];
+            var showDown = new showdown.Converter();
+
+            var bodyMD = release.body;
+            var title = release.name;
+
+            var bodyHTML = showDown.makeHtml(bodyMD);
+
+            var detailsElement = document.createElement("details");
+            var summaryElement = document.createElement("summary");
+            var bodyContainer = document.createElement("div");
+
+            summaryElement.innerText = title;
+
+            bodyContainer.innerHTML = bodyHTML;
+
+            detailsElement.classList.add("hidden-ans");
+            detailsElement.appendChild(summaryElement);
+            detailsElement.appendChild(bodyContainer);
+
+            object.element = detailsElement;
+            object.searchable = `${title} ${bodyMD}`;
+
+            fetches.push(object);
+        }
+
+        fetchIndex++;
+    }
+
     var searchBox = document.getElementById("search-box");
     var searchButton = document.getElementById("search-button");
 

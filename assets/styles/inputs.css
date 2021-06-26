@@ -73,8 +73,12 @@ details.hidden-ans {
     border: 1px solid var(--flush-button-border);
     padding: 0px var(--margin-major) 0px var(--margin-major);
     font-size: var(--font-size-general);
-    text-align: center;
+    text-align: left;
     cursor: default;
+}
+
+details.hidden-ans summary {
+    text-align: center;
 }
 
 details.hidden-ans summary {
