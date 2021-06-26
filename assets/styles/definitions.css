@@ -56,6 +56,7 @@
     --max-width-minor: 480px;
     --max-width-major: 820px;
 
+    --margin-minor-evident: 4px;
     --margin-minor: 8px;
     --margin-semi-minor: 16px;
     --margin-semi-major: 20px;
@@ -96,6 +97,7 @@
 
     /* Time */
     --transition-duration-general: 0.2s;
+    --duration-animation: 1s;
 
     /* Complex modular CSS */
 

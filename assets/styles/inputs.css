@@ -114,9 +114,8 @@ button.generic.left-button {
     padding: var(--margin-minor);
 }
 
-button.generic.right-button.disabled,
-button.generic.left-button.disabled {
-    opacity: 0.2;
+button.generic.disabled {
+    filter: brightness(0.2);
 }
 
 button.generic.right-button img,

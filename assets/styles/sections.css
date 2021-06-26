@@ -3,7 +3,6 @@ section.main-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     text-align: center;
     padding: var(--margin-major-evident) var(--margin-semi-major) var(--margin-major-evident) var(--margin-semi-major);
     box-sizing: border-box;
@@ -12,12 +11,17 @@ section.main-banner {
     background-size: cover;
 }
 
+section.main-banner.full-height {
+    height: 100%;
+}
+
 section.main-banner > img {
     box-shadow: none;
     width: 100%;
     max-width: var(--max-width);
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--margin-semi-minor);
 }
 
@@ -27,20 +31,17 @@ section.main-banner.minor {
 
 section.main-banner section.main-banner-socials {
     margin-top: var(--margin-semi-major);
-}
-
-@media (max-width: 350px) {
-    section.main-banner section.main-banner-socials {
-        display: none;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 section.main-banner section.main-banner-socials a {
-    margin: 0px var(--margin-semi-minor) 0px var(--margin-semi-minor);
+    margin: var(--margin-minor);
 }
 
 section.main-banner section.main-banner-socials a button {
-    padding: var(--margin-minor);
+    padding: var(--margin-minor-evident);
 }
 
 section.main-banner section.main-banner-socials a button img {
@@ -154,4 +155,30 @@ section.side-scroll-wrapper button.generic.right-button {
 section.side-scroll-wrapper button.generic.left-button {
     align-self: center;
     margin-right: var(--margin-semi-minor);
+}
+
+@keyframes scroll-down-animation {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 0px var(--icon-semi-minor);
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+section.scroll-down {
+    cursor: pointer;
+    background-image: url("/assets/images/icons/blunt-arrow-down.svg");
+    display: block;
+    margin: auto;
+    background-size: var(--icon-semi-minor);
+    background-repeat: no-repeat;
+    width: var(--icon-semi-minor);
+    height: calc(var(--icon-semi-minor) * 2);
+    animation-name: scroll-down-animation;
+    animation-duration: var(--duration-animation);
+    animation-iteration-count: infinite;
 }
