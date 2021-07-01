@@ -1,6 +1,6 @@
 * {
-    transition-duration: var(--transition-duration-general);
     color: white;
+    scroll-behavior: smooth;
 }
 
 *:focus {
@@ -17,4 +17,8 @@ body {
     background-color: var(--off-white1);
     background-color: var(--flush-content);
     overflow-x: hidden;
+}
+
+* {
+    font-family: "NotoSans-Regular";
 }

@@ -35,6 +35,7 @@ details.hidden-ans {
 }
 
 button.generic {
+    transition-duration: var(--transition-duration-general);
     font-family: "MinecraftTen";
     text-shadow: 0px var(--shadow-depth-text) 0px var(--main-btn-text-shadow);
     padding: var(--main-btn-padding);
@@ -57,6 +58,7 @@ button.generic:not(.disabled):active {
 }
 
 button.formal {
+    transition-duration: var(--transition-duration-general);
     background: none;
     border: 1px solid var(--seperator);
     padding: var(--margin-minor);
@@ -66,12 +68,17 @@ button.formal {
 }
 
 details.hidden-ans {
+    transition-duration: var(--transition-duration-general);
     background: none;
     border: 1px solid var(--flush-button-border);
     padding: 0px var(--margin-major) 0px var(--margin-major);
     font-size: var(--font-size-general);
-    text-align: center;
+    text-align: left;
     cursor: default;
+}
+
+details.hidden-ans summary {
+    text-align: center;
 }
 
 details.hidden-ans summary {
@@ -107,9 +114,8 @@ button.generic.left-button {
     padding: var(--margin-minor);
 }
 
-button.generic.right-button.disabled,
-button.generic.left-button.disabled {
-    opacity: 0.2;
+button.generic.disabled {
+    filter: brightness(0.2);
 }
 
 button.generic.right-button img,

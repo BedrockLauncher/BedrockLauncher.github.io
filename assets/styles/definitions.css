@@ -50,18 +50,22 @@
     --url-color: #196d17;
 
     /* Sizes / distances */
-    --nav-bar-height: 40px;
+    --nav-bar-height: 48px;
     
-    --max-width: 600px;
-    --max-width-minor: 400px;
+    --max-width: 640px;
+    --max-width-minor: 480px;
+    --max-width-major: 820px;
+    --max-width-very-major: 1000px;
 
-    --margin-minor: 5px;
-    --margin-semi-minor: 10px;
+    --margin-minor-evident: 4px;
+    --margin-minor: 8px;
+    --margin-semi-minor: 16px;
     --margin-semi-major: 20px;
     --margin-major: 40px;
+    --margin-major-evident: 64px;
 
-    --icon-semi-minor: 30px;
-    --icon-minor: 20px;
+    --icon-minor: 16px;
+    --icon-semi-minor: 32px;
     --icon-featured: 80px;
 
     --input-regular-height: 32px;
@@ -70,18 +74,18 @@
     --border-major-seperator: 2px;
     --border-evident-seperator: 4px;
 
-    --font-size-normal: 10px;
+    --font-size-normal: 8px;
     --font-size-semi-normal: 12px;
     --font-size-normal-evident-minor: 14px;
     --font-size-normal-evident: 16px;
     --font-size-attention: 18px;
     --font-size-heading: 32px;
-    --font-size-h1: 48px;
-    --font-size-h2: calc(var(--font-size-h1) - 8px);
-    --font-size-h3: calc(var(--font-size-h1) - calc(8px * 2));
-    --font-size-h4: calc(var(--font-size-h1) - calc(8px * 3));
-    --font-size-h5: calc(var(--font-size-h1) - calc(8px * 4));
-    --font-size-h6: calc(var(--font-size-h1) - calc(8px * 5));
+    --font-size-h1: 40px;
+    --font-size-h2: calc(var(--font-size-h1) - 6px);
+    --font-size-h3: calc(var(--font-size-h1) - calc(6px * 2));
+    --font-size-h4: calc(var(--font-size-h1) - calc(6px * 3));
+    --font-size-h5: calc(var(--font-size-h1) - calc(6px * 4));
+    --font-size-h6: calc(var(--font-size-h1) - calc(6px * 5));
 
     --border-radius-general: 4px;
     --border-radius-evident: 8px;
@@ -94,6 +98,8 @@
 
     /* Time */
     --transition-duration-general: 0.2s;
+    --transition-duration-quick: 0.2s;
+    --duration-animation: 1s;
 
     /* Complex modular CSS */
 

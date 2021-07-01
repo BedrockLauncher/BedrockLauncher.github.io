@@ -3,17 +3,51 @@ section.main-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     text-align: center;
-    padding: var(--margin-major) var(--margin-semi-major) var(--margin-major) var(--margin-semi-major);
+    padding: var(--margin-major-evident) var(--margin-semi-major) var(--margin-major-evident) var(--margin-semi-major);
     box-sizing: border-box;
     position: relative;
     background-position: center;
     background-size: cover;
+    transition-duration: var(--transition-duration-quick);
+}
+
+section.main-banner.full-height {
+    height: 100%;
+}
+
+section.main-banner > img {
+    box-shadow: none;
+    width: 100%;
+    max-width: var(--max-width);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--margin-semi-minor);
 }
 
 section.main-banner.minor {
     padding: var(--margin-minor);
+}
+
+section.main-banner section.main-banner-socials {
+    margin-top: var(--margin-semi-major);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.main-banner section.main-banner-socials a {
+    margin: var(--margin-minor);
+}
+
+section.main-banner section.main-banner-socials a button {
+    padding: var(--margin-minor-evident);
+}
+
+section.main-banner section.main-banner-socials a button img {
+    box-shadow: none;
+    width: var(--icon-semi-minor);
 }
 
 section.bordered {
@@ -28,6 +62,10 @@ section.main-banner.dim {
     box-shadow: inset 0px 0px 0px 100000px var(--shadow-color-non-evident);
 }
 
+section.main-banner.fade-out-black {
+    box-shadow: inset 0px 0px 0px 100000px black;
+}
+
 section.main-banner heading {
     font-family: MinecraftFive-Bold;
     font-size: var(--font-size-heading);
@@ -36,21 +74,20 @@ section.main-banner heading {
 }
 
 section.main-banner sub-title {
-    font-family: "Noto Sans";
-    font-weight: bold;
+    font-family: "Minecraft";
     text-shadow: 0px var(--shadow-depth-text) 0px var(--shadow-color-evident);
 }
 
-section.main-banner div.main-banner-buttons {
+section.main-banner section.main-banner-buttons {
     margin-top: var(--margin-major);
 }
 
-section.main-banner div.main-banner-buttons a {
+section.main-banner section.main-banner-buttons a {
     margin: var(--margin-semi-minor);
     display: inline-block;
 }
 
-section.main-banner div.main-banner-buttons button {
+section.main-banner section.main-banner-buttons button {
     width: var(--btn-width-attention);
 }
 
@@ -63,8 +100,8 @@ section.main-banner div.main-banner-buttons button {
         display: none;
     }
 
-    section.main-banner div.main-banner-buttons a,
-    section.main-banner div.main-banner-buttons a button {
+    section.main-banner section.main-banner-buttons a,
+    section.main-banner section.main-banner-buttons a button {
         width: 100%;
         margin: var(--margin-semi-minor) 0px var(--margin-semi-minor) 0px;
     }
@@ -73,6 +110,20 @@ section.main-banner div.main-banner-buttons button {
 section.width-limiter {
     width: 100%;
     max-width: var(--max-width);
+    display: block;
+    margin: auto;
+}
+
+section.width-limiter-major {
+    width: 100%;
+    max-width: var(--max-width-major);
+    display: block;
+    margin: auto;
+}
+
+section.width-limiter-very-major {
+    width: 100%;
+    max-width: var(--max-width-very-major);
     display: block;
     margin: auto;
 }
@@ -111,7 +162,13 @@ section.side-scroll {
 }
 
 section.side-scroll-element {
+    transition-duration: var(--transition-duration-general);
     flex: 0 0 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
 }
 
 section.side-scroll-wrapper button.generic.right-button {
@@ -122,4 +179,52 @@ section.side-scroll-wrapper button.generic.right-button {
 section.side-scroll-wrapper button.generic.left-button {
     align-self: center;
     margin-right: var(--margin-semi-minor);
+}
+
+@keyframes scroll-down-animation {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 0px var(--icon-semi-minor);
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+section.scroll-down {
+    cursor: pointer;
+    background-image: url("/assets/images/icons/blunt-arrow-down.svg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: var(--icon-semi-minor);
+    background-repeat: no-repeat;
+    width: var(--icon-semi-minor);
+    height: calc(var(--icon-semi-minor) * 2);
+    animation-name: scroll-down-animation;
+    animation-duration: var(--duration-animation);
+    animation-iteration-count: infinite;
+}
+
+section.side-side-compare {
+    display: flex;
+}
+
+section.side-side-compare > section.left {
+    margin-right: var(--margin-minor);
+}
+
+section.side-side-compare > section.right {
+    margin-left: var(--margin-minor);
+}
+
+section.side-side-compare > section.right, section.side-side-compare > section.left {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }

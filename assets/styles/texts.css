@@ -1,4 +1,8 @@
 a {
+    cursor: default;
+}
+
+a[href] {
     cursor: pointer;
     color: var(--url-color);
     text-decoration: none;

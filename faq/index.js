@@ -1,16 +1,4 @@
-function splitAndSpit(str) {
-    return str.split("\n").join(" ").split(" ").filter(function (el) {
-        return el != "";
-    })
-}
-
-function search(searchStr, array) {
-    return array.filter(function (value) {
-        return value.toLowerCase().indexOf(searchStr.toLowerCase()) >= 0;
-    });
-}
-
-var toFetch = [
+var fetchablePaths = [
     "accounts",
     "data",
     "misc",
@@ -19,8 +7,8 @@ var toFetch = [
 var fetches = [];
 
 var fetchIndex = 0;
-while (fetchIndex < toFetch.length) {
-    fetch(`/faq/${toFetch[fetchIndex]}/index.html`).then(function (response) {
+while (fetchIndex < fetchablePaths.length) {
+    fetch(`/faq/${fetchablePaths[fetchIndex]}/index.html`).then(function (response) {
         return response.text();
     }).then(function (text) {
         var dummyElement = document.createElement("div");
@@ -31,7 +19,6 @@ while (fetchIndex < toFetch.length) {
             var object = {};
             object.element = queryResult[queryIndex];
             object.searchable = queryResult[queryIndex].innerText;
-            object.searchable = splitAndSpit(object.searchable);
 
             fetches = fetches.concat(object);
 
@@ -45,59 +32,13 @@ while (fetchIndex < toFetch.length) {
 function commitSearch(searchStr) {
     var results = document.getElementById("results");
 
-    var searchIndex = 0;
-    while (searchIndex < fetches.length) {
-        fetches[searchIndex].hits = 0;
-        var toSearch = splitAndSpit(searchStr);
-        var innerSearchIndex = 0;
-        while (innerSearchIndex < toSearch.length) {
-            fetches[searchIndex].hits += search(toSearch[innerSearchIndex], fetches[searchIndex].searchable).length;
-
-            innerSearchIndex++;
-        }
-
-        searchIndex++;
-    }
-
-    var sortedFetchesIndexes = [];
-    while (fetches.length > sortedFetchesIndexes.length) {
-        var maxHits = 0;
-        var maxHitsIndex = 0;
-        var discorveredNewIndex = false;
-        for (var fetchIndex in fetches) {
-            if (
-                // do not check the ones already indexed
-                !sortedFetchesIndexes.includes(fetchIndex) &&
-
-                // ignore the ones with no hits
-                fetches[fetchIndex].hits > maxHits
-            ) {
-                maxHits = fetches[fetchIndex].hits;
-                maxHitsIndex = fetchIndex;
-
-                discorveredNewIndex = true;
-            }
-        }
-
-        if (!discorveredNewIndex) {
-            break;
-        } else {
-            sortedFetchesIndexes = sortedFetchesIndexes.concat(maxHitsIndex);
-        }
-    }
-
+    // clear stuff from before
     while (results.firstChild) {
         results.removeChild(results.lastChild);
     }
 
     results.classList.add("centerize");
-    
-    /*
-    var loader = document.createElement("div");
-    loader.classList.add("loader-generic");
-    results.appendChild(loader);
-    */
-    
+
     var loader = document.createElement("video");
     loader.src = "/assets/images/icons/loading_launcher.mp4";
     loader.setAttribute("autoplay", "");
@@ -105,34 +46,48 @@ function commitSearch(searchStr) {
     loader.classList.add("loader-generic-new");
     results.appendChild(loader);
 
+    // perform search after the loading screen has started
+    var fuzzySearch = new Fuse(fetches, {
+        keys: ["searchable"],
+        ignoreLocation: true
+    });
+    var fuzzySearchResult = fuzzySearch.search(searchStr);
+    console.log(fuzzySearchResult);
+
     setTimeout(function () {
+        results.classList.remove("centerize");
         while (results.firstChild) {
             results.removeChild(results.lastChild);
         }
 
-        results.classList.remove("centerize");
-        if (sortedFetchesIndexes.length > 0) {
-            for (var elementIndex in sortedFetchesIndexes) {
-                results.appendChild(fetches[Number(sortedFetchesIndexes[elementIndex])].element);
+        if (fuzzySearchResult.length > 0) {
+            var searchIndex = 0;
+            while (searchIndex < fuzzySearchResult.length) {
+                var searchedStrIndex = fuzzySearchResult[searchIndex].refIndex;
+                var searchedElement = fetches[searchedStrIndex].element;
+
+                results.appendChild(searchedElement);
                 results.appendChild(document.createElement("br"));
+
+                searchIndex++;
             }
         } else {
             var p = document.createElement("p");
-            p.innerText = "No results! Is your spelling correct? Try looking in the FAQ Categories."
+            p.innerText = "No results! Change the wording of your search or try looking in the FAQ categories manually."
             p.classList.add("center");
             results.appendChild(p);
         }
     }, (Math.random() * 1000) + 1000)
 }
 
-function LOCALWindowOnload() {
+window.addEventListener("load", function () {
     var searchBox = document.getElementById("search-box");
     var searchButton = document.getElementById("search-button");
 
     searchBox.style.display = "block";
 
     function attemptSearch(event) {
-        if (searchBox.value.length > 0) {
+        if (searchBox.value.trim().length > 0) {
             commitSearch(searchBox.value);
         }
     }
@@ -143,10 +98,4 @@ function LOCALWindowOnload() {
             attemptSearch();
         }
     });
-}
-
-if (window.onloadArray) {
-    window.onloadArray.push(LOCALWindowOnload);
-} else {
-    window.onloadArray = [LOCALWindowOnload];
-}
+})

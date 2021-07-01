@@ -1,4 +1,4 @@
-@import url("/assets/styles/server.css");
+@import url("/assets/styles/server.min.css");
 
 body {
     margin: 0px;
@@ -18,21 +18,29 @@ body {
     height: var(--nav-bar-height);
     display: flex;
     flex-direction: row;
-    max-width: var(--max-width);
+    max-width: var(--max-width-major);
 }
 
 #nav-bar-left-align {
-    float: left;
     height: 100%;
-    margin-left: var(--margin-minor);
     display: flex;
-    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+#nav-bar-middle-align {
+    flex: 1;
+    display: block;
+}
+
+#nav-bar-middle-align a img {
+    display: block;
+    margin: auto;
 }
 
 #nav-bar-right-align {
-    float: right;
-    height: 100%;
-    margin-right: var(--margin-semi-minor);
+    flex-flow: 1;
+    align-items: center;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -45,27 +53,34 @@ body {
 }
 
 #logo-link {
-    z-index: 1;
-    padding: var(--margin-minor) var(--margin-minor) var(--margin-minor) 0px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex: 1;
 }
 
-#logo-link-image {
-    width: var(--icon-semi-minor);
+#logo-link-icon {
+    height: var(--icon-semi-minor);
+    align-self: center;
+    padding: var(--margin-minor);
 }
 
-#logo-text {
-    color: white;
-    font-weight: bold;
-    opacity: 0;
-    padding: 0px;
-    font-size: 0px;
-    transform: translateX(-40px);
+#logo-link-icon-text {
+    height: var(--icon-semi-minor);
+    align-self: center;
+}
+
+@media (max-width: 620px) {
+    #nav-bar-middle-align a img {
+        display: none;
+    }
 }
 
 #search-button {
-    height: var(--icon-minor);
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
     margin: 0px;
-    padding: var(--margin-semi-minor) 0px var(--margin-semi-minor) var(--margin-semi-minor);
+    padding: var(--margin-minor);
 }
 
 #search-box {
@@ -78,16 +93,9 @@ body {
     color: white;
 }
 
-#nav-bar-middle-align {
-    width: var(--margin-minor);
-    flex: 1;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
 .clickable-main-link-icon {
-    width: 20px;
+    height: var(--icon-semi-minor);
+    width: var(--icon-semi-minor);
 }
 
 .main-link-selected .clickable-main-link-icon {
@@ -100,6 +108,7 @@ body {
 
 .clickable-main-link-text,
 .clickable-main-link:focus-within > .clickable-main-link-text {
+    transition-duration: var(--transition-duration-general);
     font-size: 0px;
     color: white;
     opacity: 0;
@@ -114,6 +123,7 @@ body {
     padding: 10px;
     height: var(--nav-bar-height);
     box-sizing: border-box;
+    transition-duration: var(--transition-duration-general);
 }
 
 .clickable-main-link:hover {
@@ -124,28 +134,22 @@ body {
     background: none;
 }
 
-/* Space for all icons available */
-@media (max-width: 199px) {
-    .clickable-main-link {
-        display: none;
-    }
-}
-
 .clickable-main-link img {
     box-shadow: none;
 }
 
-/* Space for all icons + 140px + 10px */
-@media (min-width: 360px) {
+@media (min-width: 350px) and (max-width: 620px), (min-width: 800px) {
     .clickable-main-link:hover > .clickable-main-link-text {
-        font-size: var(--font-size-normal-evident-minor);
+        transition-duration: var(--transition-duration-general);
+        font-size: var(--font-normal-evident);
+        font-family: "Minecraft";
         opacity: 1;
         transform: translateX(0px);
         margin-left: var(--margin-minor);
     }
 
     #nav-bar-left-align:hover > #logo-text {
-        font-size: var(--font-size-normal-evident);
+        font-size: var(--font-normal-evident);
         transform: translateX(0px);
         opacity: 1;
         padding: var(--margin-minor) var(--margin-semi-minor) var(--margin-minor) var(--margin-minor);
@@ -153,12 +157,5 @@ body {
 
     .clickable-main-link.main-link-selected:hover > .clickable-main-link-text {
         transform: translateX(0px) translateY(var(--border-major-seperator));
-    }
-
-    #nav-bar-right-align:hover > #search-box,
-    #nav-bar-right-align:focus-within > #search-box {
-        width: 160px;
-        margin-left: var(--margin-semi-minor);
-        padding: var(--margin-semi-minor);
     }
 }

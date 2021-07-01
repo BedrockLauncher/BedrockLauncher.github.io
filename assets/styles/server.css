@@ -1,6 +1,3 @@
-/* External fonts */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-
 /* Elemental CSS */
 @import url(embeds.min.css);
 @import url(general.min.css);
@@ -8,7 +5,7 @@
 @import url(texts.min.css);
 @import url(fonts.min.css);
 @import url(sections.min.css);
-@import url(images.min.css);
+@import url(media.min.css);
 @import url(spacers.min.css);
 @import url(definitions.min.css);
 @import url(loading.min.css);
