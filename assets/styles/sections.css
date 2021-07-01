@@ -121,6 +121,13 @@ section.width-limiter-major {
     margin: auto;
 }
 
+section.width-limiter-very-major {
+    width: 100%;
+    max-width: var(--max-width-very-major);
+    display: block;
+    margin: auto;
+}
+
 section.centerize {
     display: flex;
     align-content: center;

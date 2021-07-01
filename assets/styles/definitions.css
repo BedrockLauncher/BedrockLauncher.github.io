@@ -55,6 +55,7 @@
     --max-width: 640px;
     --max-width-minor: 480px;
     --max-width-major: 820px;
+    --max-width-very-major: 1000px;
 
     --margin-minor-evident: 4px;
     --margin-minor: 8px;

@@ -16,6 +16,7 @@ body {
     margin: 0px;
     background-color: var(--off-white1);
     background-color: var(--flush-content);
+    overflow-x: hidden;
 }
 
 * {
