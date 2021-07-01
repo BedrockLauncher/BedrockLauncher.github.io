@@ -1,8 +1,597 @@
 <?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C" version="6.23.0" title="Shotcut version 20.11.28" producer="playlist0">
-  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
-  <playlist id="playlist0" title="Shotcut version 20.11.28">
+<mlt LC_NUMERIC="C" version="6.23.0" title="Shotcut version 20.11.28" producer="main_bin">
+  <profile description="automatic" width="1280" height="660" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1280" display_aspect_den="660" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="00:00:00.467">
+    <property name="length">00:00:00.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/coola 2021-07-01 13h 17m 08s.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2021-07-01T18:17:23</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">d08d0719271dfbfa77f5c3720fde3494</property>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/8.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:21</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">fd36e806d16811ad1bcff8245c70f453</property>
+  </producer>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/9.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:40</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">523d412062e3938cc7f1df1f0f204a53</property>
+  </producer>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/10.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:54</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">bb6dcc5e2bf059d632dcac9c3a084eaf</property>
+  </producer>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/11.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:10</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">256901dedfb468938652c3a38bbd0dce</property>
+  </producer>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/12.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:26</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/13.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:39</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/14.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:51</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer8" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/15.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:49:04</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer9" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/16.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:49:30</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer10" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/17.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:50:04</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer11" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/18.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:50:30</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer12" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/0.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:44:55</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer13" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/1.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:21</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer14" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/2.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:39</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer15" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/3.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:53</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer16" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/4.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:09</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer17" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/5.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:22</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer18" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/6.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:47</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer19" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">images/7.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:09</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:00.467"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer9" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer11" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer12" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer13" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer14" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer15" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer16" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer17" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer18" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer19" in="00:00:00.000" out="00:00:03.967"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:01:15.967">
+    <property name="length">00:01:16.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:01:15.967"/>
+  </playlist>
+  <producer id="producer20" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/7.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:09</property>
+    <property name="shotcut:hash">490e811146f12bd71d75f1c43db5fe61</property>
+    <property name="global_feed">1</property>
+    <property name="shotcut:caption">7.png</property>
+  </producer>
+  <producer id="producer21" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/8.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:21</property>
+    <property name="shotcut:hash">fd36e806d16811ad1bcff8245c70f453</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer22" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/9.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:40</property>
+    <property name="shotcut:hash">523d412062e3938cc7f1df1f0f204a53</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer23" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/10.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:47:54</property>
+    <property name="shotcut:hash">bb6dcc5e2bf059d632dcac9c3a084eaf</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer24" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/11.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:10</property>
+    <property name="shotcut:hash">256901dedfb468938652c3a38bbd0dce</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer25" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/12.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:26</property>
+    <property name="shotcut:hash">50eac6eb106f81d92c11d33949dd4fc1</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer26" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/13.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:39</property>
+    <property name="shotcut:hash">89eb800adbb93e5a6f6678311de75eda</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer27" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/14.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:48:51</property>
+    <property name="shotcut:hash">1edcb4395e1460ddf6bb95b899e56a1d</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer28" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/15.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:49:04</property>
+    <property name="shotcut:hash">e68d341cb4794443cd88042dca827df0</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer29" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/16.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:49:30</property>
+    <property name="shotcut:hash">91a37b9c285b627f21fc2da4b977d582</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer30" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/17.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:50:04</property>
+    <property name="shotcut:hash">f8fb74aa0bc9a535dd9371d50004432f</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer31" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/18.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:50:30</property>
+    <property name="shotcut:hash">202eddd50d430a5d366804327c1734b8</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer32" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/0.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:44:55</property>
+    <property name="shotcut:hash">e79643401622cce706db7d5d89552397</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer33" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/1.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:21</property>
+    <property name="shotcut:hash">aedc46c9c2628374734a0059f4bcf558</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer34" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/2.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:39</property>
+    <property name="shotcut:hash">5c2b6fd5c2b61d4a81004ef8ce5db574</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer35" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/3.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:45:53</property>
+    <property name="shotcut:hash">f705013af6ffd00057e914eb1a757127</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer36" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/4.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:09</property>
+    <property name="shotcut:hash">969bd8a35a54eae541cbec87b6d033af</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer37" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/5.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:22</property>
+    <property name="shotcut:hash">beef69eaed044f042f2e03beff8f9770</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <producer id="producer38" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">f:/Project Files/BedrockLauncher.GitHub.io/assets/videos/themes/images/6.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-07-01T17:46:47</property>
+    <property name="shotcut:hash">2f15bd32dbad4095ab23a62f9da9fa54</property>
+    <property name="global_feed">1</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer20" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer21" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer22" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer23" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer24" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer25" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer26" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer27" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer28" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer29" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer30" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer31" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer32" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer33" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer34" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer35" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer36" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer37" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer38" in="00:00:00.000" out="00:00:03.967"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 20.11.28" global_feed="1" in="00:00:00.000" out="00:01:15.967">
+    <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-  </playlist>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
 </mlt>
