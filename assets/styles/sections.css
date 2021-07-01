@@ -9,6 +9,7 @@ section.main-banner {
     position: relative;
     background-position: center;
     background-size: cover;
+    transition-duration: var(--transition-duration-quick);
 }
 
 section.main-banner.full-height {
@@ -61,6 +62,10 @@ section.main-banner.dim {
     box-shadow: inset 0px 0px 0px 100000px var(--shadow-color-non-evident);
 }
 
+section.main-banner.fade-out-black {
+    box-shadow: inset 0px 0px 0px 100000px black;
+}
+
 section.main-banner heading {
     font-family: MinecraftFive-Bold;
     font-size: var(--font-size-heading);
@@ -109,6 +114,13 @@ section.width-limiter {
     margin: auto;
 }
 
+section.width-limiter-major {
+    width: 100%;
+    max-width: var(--max-width-major);
+    display: block;
+    margin: auto;
+}
+
 section.centerize {
     display: flex;
     align-content: center;
@@ -145,6 +157,11 @@ section.side-scroll {
 section.side-scroll-element {
     transition-duration: var(--transition-duration-general);
     flex: 0 0 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
 }
 
 section.side-scroll-wrapper button.generic.right-button {
@@ -173,7 +190,8 @@ section.scroll-down {
     cursor: pointer;
     background-image: url("/assets/images/icons/blunt-arrow-down.svg");
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     background-size: var(--icon-semi-minor);
     background-repeat: no-repeat;
     width: var(--icon-semi-minor);
@@ -181,4 +199,25 @@ section.scroll-down {
     animation-name: scroll-down-animation;
     animation-duration: var(--duration-animation);
     animation-iteration-count: infinite;
+}
+
+section.side-side-compare {
+    display: flex;
+}
+
+section.side-side-compare > section.left {
+    margin-right: var(--margin-minor);
+}
+
+section.side-side-compare > section.right {
+    margin-left: var(--margin-minor);
+}
+
+section.side-side-compare > section.right, section.side-side-compare > section.left {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
