@@ -1,4 +1,16 @@
-window.addEventListener("load", function () {
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function asyncBannerSwitch(bannerSwitcher, bannerDir, banners, bannerIndex) {
+    bannerSwitcher.classList.add("fade-out-black");
+    await sleep(200);
+    bannerSwitcher.style.backgroundImage = `url(${bannerDir}${banners[bannerIndex % banners.length]})`;
+    await sleep(200);
+    bannerSwitcher.classList.remove("fade-out-black");
+}
+
+window.addEventListener("load", async function () {
     var bannerDir = "/assets/images/banners/";
     var bannerSwitchers = document.getElementsByClassName("banner-swapping");
     var elementIndex = 0;
@@ -13,7 +25,7 @@ window.addEventListener("load", function () {
                 cachedImage.src = `${bannerDir}${banners[bannerIndex % banners.length]}`;
 
                 setInterval(function () {
-                    bannerSwitcher.style.backgroundImage = `url(${bannerDir}${banners[bannerIndex % banners.length]})`;
+                    asyncBannerSwitch(bannerSwitcher, bannerDir, banners, bannerIndex);
 
                     bannerIndex++;
 

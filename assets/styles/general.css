@@ -1,5 +1,6 @@
 * {
     color: white;
+    scroll-behavior: smooth;
 }
 
 *:focus {

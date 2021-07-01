@@ -13,8 +13,10 @@ function serve(url) {
 const toServeScripts = [
     // internal scripts
     "/assets/scripts/banner_switching.js",
-    "/assets/scripts/no-js-hiders.min.js",
+    "/assets/scripts/no_js_hiders.min.js",
     "/assets/scripts/side_scroller.js",
+    "/assets/scripts/scroll_down.js",
+    "/assets/scripts/face_cursor.js",
 
     // external scripts
     "https://unpkg.com/showdown/dist/showdown.min.js",
