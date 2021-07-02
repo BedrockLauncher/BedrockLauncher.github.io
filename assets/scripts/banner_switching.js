@@ -3,16 +3,10 @@ function sleep(ms) {
 }
 
 async function asyncBannerSwitch(bannerSwitcher, bannerDir, banners, bannerIndex) {
-    var oldTransDuration = bannerSwitcher.style.transitionDuration;
-    
     bannerSwitcher.classList.add("fade-out-black");
-    await sleep(100);
-    
-    bannerSwitcher.style.transitionDuration = "0s";
+    await sleep(200);
     bannerSwitcher.style.backgroundImage = `url(${bannerDir}${banners[bannerIndex % banners.length]})`;
-    await sleep(100);
-    
-    bannerSwitcher.style.transitionDuration = oldTransDuration;
+    await sleep(200);
     bannerSwitcher.classList.remove("fade-out-black");
 }
 
