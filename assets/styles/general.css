@@ -18,7 +18,3 @@ body {
     background-color: var(--flush-content);
     overflow-x: hidden;
 }
-
-* {
-    font-family: "NotoSans-Regular";
-}
