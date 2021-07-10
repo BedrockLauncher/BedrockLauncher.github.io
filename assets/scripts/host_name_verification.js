@@ -5,7 +5,7 @@ function hostNameVerification () {
         "bedrocklauncher.github.io"
     ];
     if (!whiteList.includes(window.top.location.hostname)) {
-        window.close();
+        window.location = "/no_cross_reference.html";
     }
 }
 
