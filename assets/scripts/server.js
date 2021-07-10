@@ -17,6 +17,7 @@ const toServeScripts = [
     "/assets/scripts/side_scroller.js",
     "/assets/scripts/scroll_down.js",
     "/assets/scripts/face_cursor.js",
+    "/assets/scripts/host_name_verification.js",
 
     // external scripts
     "https://unpkg.com/showdown/dist/showdown.min.js",
