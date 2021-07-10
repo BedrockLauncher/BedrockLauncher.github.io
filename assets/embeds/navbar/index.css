@@ -34,8 +34,6 @@ body {
 }
 
 #nav-bar-middle-align a img {
-    display: block;
-    margin: auto;
 }
 
 #nav-bar-right-align {
@@ -70,7 +68,7 @@ body {
     align-self: center;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 400px) {
     #nav-bar-middle-align a img {
         display: none;
     }
@@ -138,7 +136,7 @@ body {
     box-shadow: none;
 }
 
-@media (min-width: 350px) and (max-width: 620px), (min-width: 800px) {
+@media (min-width: 350px) and (max-width: 400px), (min-width: 480px) and (hover: hover) {
     .clickable-main-link:hover > .clickable-main-link-text {
         transition-duration: var(--transition-duration-general);
         font-size: var(--font-normal-evident);
