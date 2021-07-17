@@ -68,7 +68,7 @@ body {
     align-self: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 610px) {
     #nav-bar-middle-align a img {
         display: none;
     }
@@ -136,7 +136,7 @@ body {
     box-shadow: none;
 }
 
-@media (min-width: 350px) and (max-width: 400px), (min-width: 480px) and (hover: hover) {
+@media (min-width: 350px) and (max-width: 610px), (min-width: 700px) and (hover: hover) {
     .clickable-main-link:hover > .clickable-main-link-text {
         transition-duration: var(--transition-duration-general);
         font-size: var(--font-normal-evident);
