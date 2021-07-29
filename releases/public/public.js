@@ -1,10 +1,10 @@
 var pageIndex = 1;
 var lastPageIndex;
-var versionContainer = document.getElementById("version-container");
+var versionContainer;
 var fetchCache = [];
 
-var newer = document.getElementById("newer");
-var older = document.getElementById("older");
+var newer;
+var older;
 
 async function load(page) {
     var releasesJson;
@@ -71,6 +71,10 @@ async function load(page) {
 
 window.addEventListener("load", async function () {
     load(pageIndex);
+
+    newer = document.getElementById("newer");
+    older = document.getElementById("older");
+    versionContainer = document.getElementById("version-container");
 
     newer.addEventListener("click", function () {
         if (!newer.classList.contains("disabled")) {
