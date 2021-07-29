@@ -29,10 +29,17 @@ window.addEventListener("load", async function () {
             var brElement = document.createElement("br");
             var summaryElement = document.createElement("summary");
             var bodyContainer = document.createElement("div");
+            var viewOnGithub = document.createElement("a");
+            
+            viewOnGithub.innerText = "View on GitHub";
+            viewOnGithub.href = release.html_url;
+            viewOnGithub.target = "_blank";
 
             summaryElement.innerText = title;
 
             bodyContainer.innerHTML = bodyHTML;
+            bodyContainer.appendChild(brElement);
+            bodyContainer.appendChild(viewOnGithub);
 
             detailsElement.classList.add("hidden-ans");
             detailsElement.appendChild(summaryElement);
