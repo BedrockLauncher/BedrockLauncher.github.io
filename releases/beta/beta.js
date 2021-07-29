@@ -42,7 +42,7 @@ window.addEventListener("load", async function () {
             versionContainer.appendChild(brElement);
         }
         
-        if (page == 1) {
+        if (page == 1 || lastPageIndex == 1) {
             newer.classList.add("disabled");
         } else {
             newer.classList.remove("disabled");
@@ -56,7 +56,7 @@ window.addEventListener("load", async function () {
             fetchCache[page + 1] = nextFetchJson;
         }
         
-        if (page == lastPageIndex) {
+        if (page == lastPageIndex || lastPageIndex == 1) {
             older.classList.add("disabled");
         } else {
             older.classList.remove("disabled");
