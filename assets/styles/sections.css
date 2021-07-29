@@ -192,9 +192,11 @@ section.side-scroll-wrapper button.generic.left-button {
     0% {
         background-position: 0px 0px;
     }
+
     50% {
         background-position: 0px var(--icon-semi-minor);
     }
+
     100% {
         background-position: 0px 0px;
     }
@@ -227,11 +229,38 @@ section.side-side-compare > section.right {
     margin-left: var(--margin-minor);
 }
 
-section.side-side-compare > section.right, section.side-side-compare > section.left {
+section.side-side-compare > section.right,
+section.side-side-compare > section.left {
     flex: 1;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+/* 80 x 110 */
+section.people-list {
+    display: flex;
+    grid-gap: var(--margin-minor);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.people-list a {
+    width: calc(var(--icon-featured) + var(--margin-semi-minor));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.people-list a img {
+    width: var(--icon-featured);
+    height: var(--icon-featured);
+    margin-bottom: var(--margin-minor);
+}
+
+section.people-list a p {
+    text-align: center;
+    margin: 0px;
 }
