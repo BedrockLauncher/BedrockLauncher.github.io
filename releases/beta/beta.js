@@ -47,6 +47,8 @@ async function load(page) {
         versionContainer.appendChild(detailsElement);
         versionContainer.appendChild(brElement);
     }
+    
+    pageIndexElement.innerText = "Page " + pageIndex;
 
     if (page == 1 || lastPageIndex == 1) {
         newer.classList.add("disabled");
@@ -74,6 +76,7 @@ window.addEventListener("load", async function () {
 
     newer = document.getElementById("newer");
     older = document.getElementById("older");
+    pageIndexElement = document.getElementById("page-index");
     versionContainer = document.getElementById("version-container");
 
     newer.addEventListener("click", function () {
