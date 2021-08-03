@@ -48,6 +48,9 @@
     --seperator: #5c5c5c;
     
     --url-color: #27ce40;
+    
+    --scrollbar-color: #515151;
+    --scrollbar-color-hover: #5c5c5c;
 
     /* Sizes / distances */
     --nav-bar-height: 48px;
@@ -63,6 +66,8 @@
     --margin-semi-major: 20px;
     --margin-major: 40px;
     --margin-major-evident: 64px;
+    
+    --scroll-bar-width: 8px;
 
     --icon-minor: 16px;
     --icon-semi-minor: 32px;
