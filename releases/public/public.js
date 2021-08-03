@@ -52,8 +52,10 @@ async function load(page) {
 
     if (page == 1 || lastPageIndex == 1) {
         newer.classList.add("disabled");
+        newerButton.classList.add("disabled");
     } else {
         newer.classList.remove("disabled");
+        newerButton.classList.remove("disabled");
     }
 
     var nextFetch = await fetch(`https://api.github.com/repos/BedrockLauncher/BedrockLauncher/releases?per_page=10&page=${page + 1}`);
@@ -66,8 +68,10 @@ async function load(page) {
 
     if (page == lastPageIndex || lastPageIndex == 1) {
         older.classList.add("disabled");
+        olderButton.classList.add("disabled");
     } else {
         older.classList.remove("disabled");
+        olderButton.classList.remove("disabled");
     }
 }
 
@@ -76,6 +80,8 @@ window.addEventListener("load", async function () {
 
     newer = document.getElementById("newer");
     older = document.getElementById("older");
+    newerButton = document.getElementById("newer-button");
+    olderButton = document.getElementById("older-button");
     pageIndexElement = document.getElementById("page-index");
     versionContainer = document.getElementById("version-container");
 
