@@ -1,1 +1,1 @@
-@import url("/assets/styles/server.min.css");body{margin:0;padding:0;overflow:hidden}
+@import url(/assets/styles/server.min.css);body{margin:0;padding:0;overflow:hidden}#nav-bar{background-color:var(--main-bg);width:100%;height:var(--nav-bar-height);display:flex;position:fixed;top:0;left:0}#hamburger,#search{height:var(--nav-bar-height);width:var(--nav-bar-height);border:0}#logo{flex:1}

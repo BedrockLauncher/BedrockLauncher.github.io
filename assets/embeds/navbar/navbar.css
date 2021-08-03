@@ -1,7 +1,27 @@
-@import url("/assets/styles/server.min.css");
+@import url(/assets/styles/server.min.css);
 
 body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+}
+
+#nav-bar {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: var(--nav-bar-height);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#hamburger, #search {
+    height: var(--nav-bar-height);
+    width: var(--nav-bar-height);
+    border: none;
+}
+
+#logo {
+    flex: 1;
 }
