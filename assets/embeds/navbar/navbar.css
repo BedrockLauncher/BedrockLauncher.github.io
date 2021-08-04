@@ -3,25 +3,63 @@
 body {
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    background-color: transparent;
+}
+
+#nav-bar-wrapper,
+#nav-bar {
+    width: 100%;
+    height: var(--nav-bar-height);
+    background-color: var(--main-bg);
 }
 
 #nav-bar {
-    background-color: var(--main-bg);
-    width: 100%;
-    height: var(--nav-bar-height);
     display: flex;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    max-width: var(--max-width);
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
-#hamburger, #search {
+#hamburger,
+#search {
     height: var(--nav-bar-height);
     width: var(--nav-bar-height);
     border: none;
 }
 
+#hamburger img,
+#search img {
+    width: var(--icon-semi-minor);
+    height: var(--icon-semi-minor);
+}
+
 #logo {
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-link {
+    display: block;
+}
+
+#logo-img {
+    transition-duration: var(--transition-duration-general);
+    height: 64px;
+    margin-top: var(--margin-minor);
+}
+
+#logo-img.shrink {
+    height: 32px;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-color: var(--flush-content);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
 }
