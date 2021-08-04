@@ -4,7 +4,6 @@
     top: 0px;
     left: 0px;
     height: var(--nav-bar-height);
-    transition-duration: var(--transition-duration-general);
 }
 
 #nav-bar.expanded {

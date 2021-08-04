@@ -61,5 +61,12 @@ body {
     top: 0px;
     left: 0px;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0;
+    transition-duration: var(--transition-duration-general);
+}
+
+
+#background.visible {
+    transition-duration: var(--transition-duration-general);
+    opacity: 0.8;
 }
