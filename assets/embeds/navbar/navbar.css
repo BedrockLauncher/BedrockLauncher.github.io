@@ -18,7 +18,7 @@ body {
     display: flex;
     max-width: var(--max-width);
     margin-left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 }
 
 #hamburger,
@@ -57,7 +57,7 @@ body {
 #background {
     width: 100%;
     height: 100%;
-    background-color: var(--flush-content);
+    background-color: black;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -70,4 +70,21 @@ body {
 #background.visible {
     transition-duration: var(--transition-duration-general);
     opacity: 0.8;
+}
+
+#expanded-hamburgur {
+    position: fixed;
+    top: var(--nav-bar-height);
+    left: 0px;
+    transform: translateX(-100%);
+    padding: var(--margin-semi-minor) var(--margin-semi-major) var(--margin-semi-minor) var(--margin-semi-major);
+    height: calc(100% - var(--nav-bar-height));
+    overflow-y: auto;
+    background-color: var(--flush-content);
+    
+    transition-duration: var(--transition-duration-general);
+}
+
+#expanded-hamburgur.expanded {
+    transform: translateX(0%);
 }

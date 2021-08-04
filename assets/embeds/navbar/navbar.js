@@ -1,4 +1,4 @@
-var embed, background, transitionDuration;
+var embed, background, transitionDuration, expandedHamburgur;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -6,11 +6,13 @@ function sleep(ms) {
 
 async function expand() {
     background.classList.add("visible");
+    expandedHamburgur.classList.add("expanded");
     embed.classList.add("expanded");
 }
 
 async function shrink() {
     background.classList.remove("visible");
+    expandedHamburgur.classList.remove("expanded");
     await sleep(transitionDuration * 1000);
     embed.classList.remove("expanded");
 }
@@ -22,6 +24,7 @@ window.addEventListener("load", async function () {
     var hamburgur = document.getElementById("hamburger");
     background = document.getElementById("background");
     embed = parent.window.document.getElementById("nav-bar");
+    expandedHamburgur = document.getElementById("expanded-hamburgur");
 
     var isExpanded = false;
 
