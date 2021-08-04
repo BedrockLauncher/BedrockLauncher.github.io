@@ -82,8 +82,15 @@ body {
     height: calc(100% - var(--nav-bar-height));
     overflow-y: auto;
     background-color: var(--flush-content);
+    min-width: 350px;
     
     transition-duration: var(--transition-duration-general);
+}
+
+@media (max-width: 400px) {
+    #expanded-hamburgur {
+        width: calc(100% - calc(var(--margin-semi-minor) * 2));
+    }
 }
 
 #expanded-hamburgur.expanded {
