@@ -1,5 +1,7 @@
 var embed, background, transitionDuration, expandedHamburgur;
 
+var isExpanded = false;
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -8,6 +10,8 @@ async function expand() {
     background.classList.add("visible");
     expandedHamburgur.classList.add("expanded");
     embed.classList.add("expanded");
+
+    isExpanded = true;
 }
 
 async function shrink() {
@@ -15,6 +19,8 @@ async function shrink() {
     expandedHamburgur.classList.remove("expanded");
     await sleep(transitionDuration * 1000);
     embed.classList.remove("expanded");
+
+    isExpanded = false;
 }
 
 window.addEventListener("load", async function () {
@@ -26,15 +32,12 @@ window.addEventListener("load", async function () {
     embed = parent.window.document.getElementById("nav-bar");
     expandedHamburgur = document.getElementById("expanded-hamburgur");
 
-    var isExpanded = false;
-
     hamburgur.addEventListener("click", function () {
         if (isExpanded) {
             shrink();
         } else {
             expand();
         }
-
-        isExpanded = !isExpanded;
     })
+    background.addEventListener("click", shrink);
 })
