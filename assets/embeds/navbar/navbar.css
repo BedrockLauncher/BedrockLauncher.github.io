@@ -82,7 +82,7 @@ body {
     height: calc(100% - var(--nav-bar-height));
     overflow-y: auto;
     background-color: var(--flush-content);
-    min-width: 350px;
+    min-width: 300px;
     
     transition-duration: var(--transition-duration-general);
 }
