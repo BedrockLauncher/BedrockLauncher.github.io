@@ -10,6 +10,7 @@ body {
 #nav-bar {
     width: 100%;
     height: var(--nav-bar-height);
+    max-height: var(--nav-bar-height);
     background-color: var(--main-bg);
 }
 
@@ -40,7 +41,7 @@ body {
 }
 
 #logo-link {
-    display: block;
+    height: 100%;
 }
 
 #logo-img {
