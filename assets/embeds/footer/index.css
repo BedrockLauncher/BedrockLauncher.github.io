@@ -67,8 +67,8 @@ body {
     color: var(--seperator);
 }
 
-#no-mojang {
-    margin-top: var(--margin-semi-minor);
+.bottom-text {
+    margin-top: var(--margin-minor);
     font-size: var(--font-size-normal-evident-minor);
     color: var(--seperator);
 }
