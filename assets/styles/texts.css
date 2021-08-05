@@ -8,6 +8,10 @@ a[href], a.color {
     text-decoration: none;
 }
 
+a[href]:hover , a.color:hover {
+    text-decoration: underline;
+}
+
 a.simple {
     text-decoration: underline;
     font-weight: bold;

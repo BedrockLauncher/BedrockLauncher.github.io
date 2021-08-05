@@ -45,12 +45,13 @@ body {
 
 #logo-link {
     height: 100%;
+    padding: var(--margin-minor) var(--margin-minor) var(--margin-minor) 0px;
 }
 
 #logo-img {
     transition-duration: var(--transition-duration-general);
     height: 64px;
-    margin-top: var(--margin-minor);
+    object-fit: contain;
 }
 
 #logo-img.shrink {
@@ -78,12 +79,12 @@ body {
     top: var(--nav-bar-height);
     left: 0px;
     transform: translateX(-100%);
-    padding: var(--margin-semi-minor) var(--margin-semi-major) var(--margin-semi-minor) var(--margin-semi-major);
+    padding: var(--margin-major) var(--margin-semi-minor) var(--margin-major) var(--margin-semi-minor);
     height: calc(100% - var(--nav-bar-height));
     overflow-y: auto;
     background-color: var(--flush-content);
     min-width: 300px;
-    
+
     transition-duration: var(--transition-duration-general);
 }
 
