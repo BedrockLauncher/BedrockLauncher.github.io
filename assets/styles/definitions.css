@@ -7,7 +7,7 @@
     --flush-content: #323232;
     --flush-button-hover: #515151;
     --flush-input: #131313;
-    
+
     --evident-selection: #006431;
 
     --main-btn-text-shadow: #004e26;
@@ -40,21 +40,21 @@
         3px 0px 0px 2px white,
         0px 3px 0px 2px white,
         -3px 0px 0px 2px white;
-    
+
     --shadow-color-non-evident: rgba(0, 0, 0, 0.3);
     --shadow-color-semi-evident: rgba(0, 0, 0, 0.5);
     --shadow-color-evident: rgba(0, 0, 0, 0.8);
-    
+
     --seperator: #5c5c5c;
-    
+
     --url-color: #27ce40;
-    
+
     --scrollbar-color: #515151;
     --scrollbar-color-hover: #5c5c5c;
 
     /* Sizes / distances */
     --nav-bar-height: 48px;
-    
+
     --max-width: 640px;
     --max-width-minor: 480px;
     --max-width-major: 820px;
@@ -66,7 +66,7 @@
     --margin-semi-major: 20px;
     --margin-major: 40px;
     --margin-major-evident: 64px;
-    
+
     --scroll-bar-width: 8px;
 
     --icon-minor: 16px;
@@ -98,11 +98,12 @@
     --shadow-depth-general: 6px;
     --shadow-depth-attention: 4px;
     --shadow-depth-text: 2px;
-    
+
     --btn-width-attention: 160px;
 
     /* Time */
     --transition-duration-general: 0.2s;
+    --transition-duration-semi-slow: 0.4s;
     --transition-duration-quick: 0.2s;
     --duration-animation: 1s;
 

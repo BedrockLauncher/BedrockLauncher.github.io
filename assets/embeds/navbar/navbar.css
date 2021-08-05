@@ -31,10 +31,19 @@ body {
     border: none;
 }
 
-#hamburger img,
-#search img {
+#hamburger > img,
+#search > img {
     width: var(--icon-semi-minor);
     height: var(--icon-semi-minor);
+}
+
+#hamburger-icon {
+    transition-duration: var(--transition-duration-semi-slow);
+    transform: perspective(100px) rotateX(0deg);
+}
+
+#hamburger-icon.expanded {
+    transform: perspective(100px) rotateX(180deg);
 }
 
 #logo {

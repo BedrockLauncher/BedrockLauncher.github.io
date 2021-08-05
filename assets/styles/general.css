@@ -1,6 +1,7 @@
 * {
     color: white;
     scroll-behavior: smooth;
+    transition-timing-function: ease-in-out;
 }
 
 *:focus {
