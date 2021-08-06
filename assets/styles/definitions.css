@@ -104,7 +104,8 @@
     /* Time */
     --transition-duration-general: 0.2s;
     --transition-duration-semi-slow: 0.4s;
-    --transition-duration-quick: 0.2s;
+    --transition-duration-quick: 0.1s;
+    --transition-duration-snap: 0.05s;
     --duration-animation: 1s;
 
     /* Complex modular CSS */

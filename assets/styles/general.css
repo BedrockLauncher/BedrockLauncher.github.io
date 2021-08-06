@@ -20,7 +20,12 @@ body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-track-piece {
+.face-cursor {
+    transition-duration: var(--transition-duration-general);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track-piece {
     width: var(--scroll-bar-width);
     background-color: var(--flush-content);
 }

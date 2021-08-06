@@ -9,7 +9,7 @@ section.main-banner {
     position: relative;
     background-position: center;
     background-size: cover;
-    transition-duration: var(--transition-duration-quick);
+    transition-duration: var(--transition-duration-general);
 }
 
 section.main-banner.full-height {
