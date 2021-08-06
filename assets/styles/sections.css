@@ -104,6 +104,9 @@ section.main-banner section.main-banner-buttons button {
     section.main-banner section.main-banner-buttons a,
     section.main-banner section.main-banner-buttons a button {
         width: 100%;
+    }
+
+    section.main-banner section.main-banner-buttons a {
         margin: var(--margin-semi-minor) 0px var(--margin-semi-minor) 0px;
     }
 }
