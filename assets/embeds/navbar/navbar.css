@@ -129,8 +129,20 @@ body {
 
 #control-bar {
     height: var(--input-regular-height);
+    margin-bottom: var(--margin-major);
     display: flex;
     widows: 100%;
+}
+
+.result-title {
+    margin-bottom: 0px;
+}
+
+.result-text {
+    margin-top: 0px;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    display: inline;
 }
 
 #search-box {

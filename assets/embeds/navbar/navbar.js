@@ -1,4 +1,4 @@
-var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon, search, expandedSearch, searchIcon;
+var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon, search, expandedSearch, searchIcon, results;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -59,9 +59,35 @@ async function fetchQueryResults(query) {
     var cx = "5f283ba92be0b61e1";
 
     var fetchResult = await fetch(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${query}`);
-    var fetchJson = await fetchResult.json();
-
-    return fetchJson.items;
+    var resultsJson = (await fetchResult.json()).items;
+    
+    results.innerHTML = "";
+    
+    for (resultIndex in resultsJson) {
+        var result = resultsJson[resultIndex];
+        
+        var resultElement = document.createElement("div");
+        var hr = document.createElement("hr");
+        var resultTitle = document.createElement("p");
+        var resultTitleLink = document.createElement("a");
+        var resultText = document.createElement("p");
+        
+        resultElement.classList.add("result");
+        resultTitle.classList.add("result-title");
+        resultText.classList.add("result-text");
+        
+        resultTitleLink.href = result.link;
+        resultTitleLink.innerText = result.title;
+        resultTitleLink.target = "_parent";
+        resultText.innerText = result.snippet;
+        
+        resultTitle.appendChild(resultTitleLink);
+        resultElement.appendChild(resultTitle);
+        resultElement.appendChild(resultText);
+        
+        results.appendChild(resultElement);
+        results.appendChild(hr);
+    }
 }
 
 window.addEventListener("load", async function () {
@@ -78,6 +104,7 @@ window.addEventListener("load", async function () {
     logoImg = document.getElementById("logo-img");
     search = document.getElementById("search");
     searchIcon = document.getElementById("search-icon");
+    results = document.getElementById("results");
 
     hamburgur.addEventListener("click", function () {
         if (expandedHamburgur.classList.contains("expanded")) {
@@ -102,4 +129,6 @@ window.addEventListener("load", async function () {
         shrinkHamburgur();
         shrinkSearch();
     });
+
+fetchQueryResults("version");
 })
