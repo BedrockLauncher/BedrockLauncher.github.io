@@ -63,7 +63,7 @@ section.main-banner.dim {
 }
 
 section.main-banner.fade-out-black {
-    box-shadow: inset 0px 0px 0px 100000px black;
+    box-shadow: inset 0px 0px 0px 100000px var(--main-bg);
 }
 
 section.main-banner heading {
