@@ -1,4 +1,4 @@
-var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon;
+var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon, search;
 
 var isExpanded = false;
 
@@ -32,6 +32,16 @@ async function shrink() {
     isExpanded = false;
 }
 
+async function fetchQueryResults (query) {
+    var key = "AIzaSyDao5Lwp0lQM9VF8OVf3zzSR92M5U_XLPA";
+    var cx = "5f283ba92be0b61e1";
+    
+    var fetchResult = await fetch(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${query}`);
+    var fetchJson = await fetchResult.json();
+    
+    return fetchJson.items;
+}
+
 window.addEventListener("load", async function () {
     var computedStyle = getComputedStyle(document.documentElement)
     var transitionDurationString = computedStyle.getPropertyValue("--transition-duration-general");
@@ -43,6 +53,7 @@ window.addEventListener("load", async function () {
     embed = parent.window.document.getElementById("nav-bar");
     expandedHamburgur = document.getElementById("expanded-hamburgur");
     logoImg = document.getElementById("logo-img");
+    search = document.getElementById("search");
 
     hamburgur.addEventListener("click", function () {
         if (isExpanded) {
