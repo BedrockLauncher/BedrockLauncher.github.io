@@ -38,7 +38,7 @@ body {
 }
 
 #hamburger-icon {
-    transition-duration: var(--transition-duration-semi-slow);
+    transition-duration: var(--transition-duration-general);
     transform: perspective(100px) rotateX(0deg);
 }
 

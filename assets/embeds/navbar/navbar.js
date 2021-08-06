@@ -1,4 +1,4 @@
-var embed, background, transitionDuration, transitionDurationSemiSlow, expandedHamburgur, logoImg, hamburgur, hamburgurIcon;
+var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon;
 
 var isExpanded = false;
 
@@ -13,7 +13,7 @@ async function expand() {
     hamburgurIcon.classList.add("expanded");
     embed.classList.add("expanded");
 
-    await sleep(transitionDurationSemiSlow * 1000 / 2);
+    await sleep(transitionDuration * 1000 / 2);
     hamburgurIcon.src = "/assets/images/icons/cancel.svg";
 
     isExpanded = true;
@@ -25,10 +25,8 @@ async function shrink() {
     logoImg.classList.add("shrink");
     hamburgurIcon.classList.remove("expanded");
 
-    await sleep(transitionDurationSemiSlow * 1000 / 2);
+    await sleep(transitionDuration * 1000 / 2);
     hamburgurIcon.src = "/assets/images/icons/hamburger.svg";
-
-    await sleep(((transitionDurationSemiSlow / 2) - transitionDuration) * 1000);
     embed.classList.remove("expanded");
 
     isExpanded = false;
@@ -37,9 +35,7 @@ async function shrink() {
 window.addEventListener("load", async function () {
     var computedStyle = getComputedStyle(document.documentElement)
     var transitionDurationString = computedStyle.getPropertyValue("--transition-duration-general");
-    var transitionDurationSemiSlowString = computedStyle.getPropertyValue("--transition-duration-semi-slow");
     transitionDuration = Number(transitionDurationString.slice(0, transitionDurationString.length - 1));
-    transitionDurationSemiSlow = Number(transitionDurationSemiSlowString.slice(0, transitionDurationSemiSlowString.length - 1));
 
     hamburgur = document.getElementById("hamburger");
     hamburgurIcon = document.getElementById("hamburger-icon");
