@@ -7,7 +7,7 @@ button.center {
     margin: auto;
 }
 
-input[type="text"] {
+input[type="text"], input[type="search"] {
     border: none;
     border-radius: var(--border-evident-seperator);
     padding: 0px;
@@ -16,8 +16,8 @@ input[type="text"] {
 input.generic {
     background-color: #131313;
     text-align: center;
-    padding: 4px;
-    height: 30px;
+    padding: var(--margin-minor);
+    height: var(--input-regular-height);
 }
 
 input.generic:focus,

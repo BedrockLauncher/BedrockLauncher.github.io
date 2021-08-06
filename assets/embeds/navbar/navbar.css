@@ -126,3 +126,24 @@ body {
 #expanded-hamburgur.expanded, #expanded-search.expanded {
     transform: translateX(0%);
 }
+
+#control-bar {
+    height: var(--input-regular-height);
+    display: flex;
+    widows: 100%;
+}
+
+#search-box {
+    flex: 1;
+    margin-right: var(--margin-minor);
+}
+
+#actual-search-button {
+    width: var(--input-regular-height);
+    height: var(--input-regular-height);
+}
+
+#actual-search-button > img {
+    width: var(--icon-minor);
+    height: var(--icon-minor);
+}
