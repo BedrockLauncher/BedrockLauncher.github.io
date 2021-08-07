@@ -54,6 +54,9 @@
 
     /* Sizes / distances */
     --nav-bar-height: 48px;
+    
+    --nav-bar-widget-width: 250px;
+    --nav-bar-widget-snap-width: 400px;
 
     --max-width: 640px;
     --max-width-minor: 480px;
