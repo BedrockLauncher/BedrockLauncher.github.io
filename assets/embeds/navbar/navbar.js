@@ -1,4 +1,4 @@
-var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon, search, expandedSearch, searchIcon, results, searchBox;
+var embed, background, transitionDuration, expandedHamburgur, logoImg, hamburgur, hamburgurIcon, search, expandedSearch, searchIcon, results, searchBox, actualSearchButton;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -67,7 +67,7 @@ async function fetchQueryResults() {
 
     if (fetchJson.error) {
         if (confirm("Daily search limit has been exceeded, redirect to default search page?")) {
-            location.href = `https://cse.google.com/cse?cx=5f283ba92be0b61e1&q=${query}`;
+            open(`/search/&q=${query}`, "_blank");
         }
 
         return;
@@ -133,6 +133,7 @@ window.addEventListener("load", async function () {
     searchIcon = document.getElementById("search-icon");
     results = document.getElementById("results");
     searchBox = document.getElementById("search-box");
+    actualSearchButton = document.getElementById("actual-search-button");
 
     hamburgur.addEventListener("click", function () {
         if (expandedHamburgur.classList.contains("expanded")) {
@@ -161,4 +162,5 @@ window.addEventListener("load", async function () {
     searchBox.addEventListener("keyup", function (event) {
         if (event.keyCode == 13) fetchQueryResults();
     })
+    actualSearchButton.addEventListener("click", fetchQueryResults)
 })
