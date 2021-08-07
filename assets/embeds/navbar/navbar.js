@@ -67,7 +67,7 @@ async function fetchQueryResults() {
 
     if (fetchJson.error) {
         if (confirm("Daily search limit has been exceeded, redirect to default search page?")) {
-            open(`/search/&q=${query}`, "_blank");
+            open(`/search/?q=${query}`, "_blank");
         }
 
         return;
