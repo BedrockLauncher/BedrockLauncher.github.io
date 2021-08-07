@@ -38,6 +38,10 @@ body {
     font-size: var(--font-size-normal-evident-minor);
 }
 
+.urls > a {
+    text-decoration: none;
+}
+
 #credits {
     display: flex;
 }
@@ -47,7 +51,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-decoration: none;
     text-align: center;
     padding: var(--margin-semi-major);
 }
