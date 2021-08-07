@@ -1,14 +1,19 @@
-a {
+a:not([href]) {
     cursor: default;
 }
 
-a[href], a.color {
+a[href] {
     cursor: pointer;
-    color: var(--url-color);
     text-decoration: none;
 }
 
-a[href]:hover , a.color:hover {
+a[href]:not(.clean),
+a.color:not(.clean) {
+    color: var(--url-color);
+}
+
+a[href]:not(.clean):hover,
+a.color:not(.clean):hover {
     text-decoration: underline;
 }
 
