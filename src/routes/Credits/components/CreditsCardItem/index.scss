@@ -1,0 +1,39 @@
+.credits-card {
+  text-align: center;
+  padding: 1rem 1.6rem;
+
+  .credits-card-icon {
+    display: flex;
+    place-content: center;
+    padding: 0.4rem;
+
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      box-shadow: 0 0 6px 2px #00000066;
+    }
+
+    a {
+      border: 1px solid transparent;
+    }
+
+    a:focus-visible {
+      outline: none;
+      border-color: white;
+    }
+
+    a:hover {
+      img {
+        filter: brightness(69%);
+      }
+    }
+  }
+
+  p {
+    color: white;
+    font-weight: 550;
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+  }
+}

@@ -1,0 +1,63 @@
+.credits {
+  background: #323232;
+  height: 100%;
+
+  .credits-section {
+    background: rgb(54, 54, 54) url(../../assets/images/banners/1.0_pocket_edition.jpg);
+    background-color: #00000069;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: calc(31vh - 60px);
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+    h2 {
+      font-family: 'MinecraftFiveBold';
+      color: white;
+      font-size: 1.9rem;
+      text-shadow: 0 4px 0 rgb(48, 48, 48);
+    }
+  
+    p {
+      font-family: 'MinecraftFiveBold';
+      color: white;
+      text-shadow: 0 3px 0 rgb(48, 48, 48);
+      font-size: 1.2rem;
+      width: 90%;
+    }
+  }
+
+  main {
+    padding: 3rem 0;
+  }
+
+  h2 {
+    font-family: 'MinecraftTen';
+    color: white;
+    text-shadow: 0 5px 0 #00000080;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    place-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 3.2rem 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.docs {
+  .md {
+    h1 {
+      color: white;
+      text-align: center;
+      width: 100%;
+      padding: 0 0 1.2rem 0;
+    }
+
+    h2 {
+      font-family: inherit;
+      padding: 1rem 0;
+    }
+
+    h3 {
+      color: white;
+      padding: 1rem 0;
+    }
+
+    ul {
+      list-style-type: '- ';
+      margin-left: 1rem;
+      padding: 1rem 0;
+    }
+
+    ol {
+      margin-left: 1rem;
+      padding: 1rem 0;
+    }
+
+    li {
+      color: rgb(211, 211, 211);
+    }
+
+    p {
+      margin-left: 0.4rem;
+      color: rgb(211, 211, 211);
+    }
+
+    code {
+      background: #222;
+      border-radius: 3px;
+      padding: 2px 3px;
+      margin: 0 0.1rem;
+      color: #ddd;
+    }
+  }
+
+  .md-go-back {
+    padding: 1rem 0 0 0;
+    color: white;
+    
+    a {
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

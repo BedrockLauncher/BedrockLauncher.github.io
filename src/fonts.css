@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url(./assets/fonts/Minecraft.ttf);
+}
+
+@font-face {
+  font-family: 'MinecraftFive';
+  src: url(./assets/fonts/MinecraftFive-Regular.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinecraftFiveBold';
+  src: url(./assets/fonts/MinecraftFive-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'MinecraftTen';
+  src: url(./assets/fonts/MinecraftTen.ttf);
+  font-weight: 100;
+  font-style: normal;
+}

@@ -1,0 +1,144 @@
+.faqdetails {
+  // min-height: 40px;
+  border: 1px solid rgb(94, 94, 94);
+
+  .faqdetails-content {
+    display: none;
+    padding: 1rem;
+    color: white;
+    animation: sweep .2s ease;
+    transition: max-height 100ms ease;
+    overflow: hidden;
+    max-height: 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    code {
+      background: #00000069;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+
+    p {
+      padding: 0.4rem 0;
+    }
+
+    h5 {
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: hsl(119, 65%, 40%);
+
+      &:hover {
+        color: hsl(119, 65%, 30%)
+      }
+
+      &:focus-visible {
+        outline: 1px solid white;
+      }
+    }
+
+    img {
+      padding: 0.4rem 0;
+    }
+
+    img:last-child {
+      padding: 0.4rem 0 0 0;
+    }
+
+    p:first-child {
+      padding: 0;
+    }
+  }
+
+  &.open-semi {
+    height: initial;
+
+    .faqdetails-content {
+      display: block;
+    }
+  }
+
+  &.open {
+    .faqdetails-content {
+      max-height: max-content;
+      transition: max-height 1000ms ease-in;
+    }
+  }
+  
+  @keyframes sweep {
+    0% {opacity: 0; transform: translateY(-10px)}
+    100% {opacity: 1; transform: translateY(0)}
+  }
+
+  &.open {
+    .faqdetails-header {
+      span {
+        transform: rotateZ(0);
+      }
+    }
+  }
+
+  &-header {
+    display: flex;
+    cursor: pointer;
+    place-items: center;
+    color: white;
+    height: max-content;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid transparent;
+    user-select: none;
+
+    svg {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+
+    span {
+      width: 14px;
+      margin: 0 0.4rem 0 0;
+      transform: rotateZ(-90deg);
+      filter: invert(100%);
+      transition: transform 200ms;
+    }
+
+    &:hover {
+      background: #ffffff22;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      border: 1px solid white;
+    }
+  }
+  
+  a {
+    color: hsl(119, 65%, 45%);
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(119, 65%, 35%);
+    }
+  }
+
+  .github-link {
+    display: block;
+    width: max-content;
+    margin: 1rem 0 0 0;
+    text-decoration: none;
+  }
+
+  .faqdetails-content.md {
+    ul {
+      margin-left: 1.2rem;
+    }
+  } 
+}

@@ -1,0 +1,33 @@
+.downloads {
+  background: #323232;
+  height: 100%;
+  margin-top: 50px;
+
+  h2 {
+    color: white;
+    font-family: 'MinecraftTen';
+    font-weight: 100;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0 3rem;
+    width: 100%;
+    place-content: center;
+
+  }
+
+  .button-text {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,55 @@
+.faq {
+  background: #323232;
+  height: 100%;
+
+  .faq-section {
+    background: rgb(54, 54, 54) url(../../assets/images/banners/1.0_pocket_edition.jpg);
+    background-color: #00000069;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: calc(31vh - 60px);
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+    h2 {
+      font-family: 'MinecraftFiveBold';
+      color: white;
+      font-size: 1.9rem;
+      text-shadow: 0 4px 0 rgb(48, 48, 48);
+      font-weight: 100;
+      font-style: normal;
+    }
+  
+    p {
+      font-family: 'MinecraftFiveBold';
+      color: white;
+      text-shadow: 0 3px 0 rgb(48, 48, 48);
+      font-weight: 100;
+      font-style: normal;
+      font-size: 1.2rem;
+    }
+  }
+  
+  main {
+    padding: 3rem 0;
+    height: max-content;
+    overflow: hidden;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  hr {
+    border-color: rgb(146, 146, 146);
+    margin: 1rem 0;
+  }
+}

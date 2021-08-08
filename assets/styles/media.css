@@ -1,8 +1,0 @@
-img:not(.clean), video:not(.clean) {
-    border-radius: var(--border-radius-general);
-    box-shadow: 0px 0px var(--shadow-depth-general) black;
-}
-
-img, video {
-    max-width: 100%;
-}

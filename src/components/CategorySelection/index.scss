@@ -1,0 +1,58 @@
+.cat-selection {
+  display: grid;
+  width: 100%;
+  row-gap: 1rem;
+
+  .cat-link {
+    box-sizing: content-box;
+    box-shadow: 0 3px 0 #00000045;
+    padding: 1rem 1rem;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #00000045;
+    text-decoration: none;
+
+    &:hover {
+      img {
+        filter: brightness(40%);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      border: 1px solid white;
+    }
+
+    h4 {
+      font-family: 'MinecraftFive';
+      color: white;
+      font-size: 1.1rem;
+      font-weight: normal;
+      text-shadow: 0 4px 0 #00000069;
+    }
+
+    p {
+      color: white;
+      text-shadow: 0 2px 0 #00000069;
+    }
+
+    img {
+      top: 0;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      transform: translate(0, -40%);
+      transition: filter 150ms ease;
+      filter: brightness(50%);
+      width: 100%;
+    }
+  }
+}

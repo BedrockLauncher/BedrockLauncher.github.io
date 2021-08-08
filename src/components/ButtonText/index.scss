@@ -1,0 +1,95 @@
+.button-text {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  background: linear-gradient(#009147, #008542);
+  border: 0;
+  font-family: 'MinecraftTen';
+  color: white;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.4rem;
+  margin: 4px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-weight: 100;
+  font-style: normal;
+
+  text-shadow: 0 3px 0 #00000042;
+  --border: #000;
+  --top-border: #27ce40;
+  --bottom-border: #064d2a;
+
+  user-select: none;
+  &::selection {
+    background: none;
+  }
+
+  box-shadow: 
+    0px -3px 0 0 var(--top-border),
+    0px 3px 0 0 var(--bottom-border),
+    -3px 0px 0 0#0c6e3d,
+    3px 0px 0 0#0c6e3d,
+
+    -2px -5px 0 0 var(--border),
+    2px -5px 0 0 var(--border),
+    -5px -2px 0 0 var(--border),
+    5px -2px 0 0 var(--border),
+
+    -2px 5px 0 0 var(--border),
+    2px 5px 0 0 var(--border),
+    -5px 2px 0 0 var(--border),
+    5px 2px 0 0 var(--border),
+  ;
+
+  &:hover {
+    background: linear-gradient(#0a9a50, #0a8f4c);
+  }
+
+  &:active {
+    background: #008943;
+    --top-border: #064d2a;
+    --bottom-border: #27ce40;
+  }
+  
+  &:focus {
+    outline: none;
+    --border: #fff;
+  }
+
+  &.focused {
+    outline: none;
+    --border: #fff;
+  }
+
+  &.social {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 40px;
+    padding: 0.3rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.button-icon {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 40px;
+    padding: 0.3rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    filter: brightness(40%);
+  }
+}

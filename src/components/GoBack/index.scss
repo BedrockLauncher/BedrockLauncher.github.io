@@ -1,0 +1,36 @@
+.go-back {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  width: max-content;
+  color: white;
+  column-gap: 0.5rem;
+  font-family: 'MinecraftFive';
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-style: normal;
+  text-shadow: 0 3px #00000069;
+  user-select: none;
+  &::selection {
+    background: none;
+  }
+
+  svg {
+    height: fit-content;
+  }
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
