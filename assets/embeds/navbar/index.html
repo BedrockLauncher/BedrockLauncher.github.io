@@ -1,44 +1,106 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="index.min.css">
-    <script src="index.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="navbar.min.css">
+    <script src="navbar.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 
 <body>
-    <header id="nav-bar-main-header">
-        <div id="nav-bar-width">
-            <div id="nav-bar-left-align">
-                <a id="logo-link" target="_parent" href="/">
-                    <img class="clean" id="logo-link-icon" src="/assets/images/logos/BedrockLauncher_128x128.ico">
-                </a>
-            </div>
-            <div id="nav-bar-middle-align">
-                <a id="logo-link" target="_parent" href="/">
-                    <img class="clean" id="logo-link-icon-text" src="/assets/images/logos/logo.png">
-                </a>
-            </div>
-            <div id="nav-bar-right-align">
-                <a title="Source" href="https://github.com/BedrockLauncher/BedrockLauncher" target="_blank" class="clean clickable-main-link">
-                    <img class="clickable-main-link-icon" src="/assets/images/icons/github.svg">
-                    <span class="clickable-main-link-text">Source</span>
-                </a>
-                <a title="Releases" href="/releases/" target="_parent" class="clean clickable-main-link">
-                    <img class="clickable-main-link-icon" src="/assets/images/icons/flask.svg">
-                    <span class="clickable-main-link-text">Releases</span>
-                </a>
-                <a title="Download" href="https://github.com/BedrockLauncher/BedrockLauncher.Installer/releases/latest/download/BedrockLauncher.Installer.exe" target="_parent" class="clean clickable-main-link">
-                    <img class="clickable-main-link-icon" src="/assets/images/icons/download.svg">
-                    <span class="clickable-main-link-text">Download</span>
-                </a>
-                <a title="FAQ" href="/faq/" target="_parent" class="clean clickable-main-link">
-                    <img class="clickable-main-link-icon" src="/assets/images/icons/question.svg">
-                    <span class="clickable-main-link-text">FAQ</span>
-                </a>
-            </div>
+    <div id="background"></div>
+    <div id="expanded-hamburgur">
+        <h3>Categories</h3>
+        <br>
+
+        <details class="links-holder">
+            <summary>FAQ</summary>
+            <ul>
+                <li><a target="_parent" href="/faq/data/">Data</a></li>
+                <li><a target="_parent" href="/faq/accounts/">Accounts</a></li>
+                <li><a target="_parent" href="/faq/versions/">Versions</a></li>
+                <li><a target="_parent" href="/faq/misc/">Miscellaneous</a></li>
+                <li><a target="_parent" href="/faq/">FAQ</a></li>
+            </ul>
+        </details>
+
+        <hr>
+
+        <details class="links-holder">
+            <summary>Releases</summary>
+            <ul>
+                <li><a target="_parent" href="/releases/beta/">Beta</a></li>
+                <li><a target="_parent" href="/releases/public/">Public</a></li>
+                <li><a target="_parent" href="/releases/">Releases</a></li>
+            </ul>
+        </details>
+
+        <br>
+        <br>
+
+        <h3>Docs</h3>
+        <br>
+
+        <details class="links-holder">
+            <summary>Dev Info</summary>
+            <ul>
+                <li><a target="_blank" href="https://github.com/BedrockLauncher/BedrockLauncher/">Launcher Source</a></li>
+                <li><a target="_blank" href="https://github.com/BedrockLauncher/BedrockLauncher.GitHub.io">Website Source</a></li>
+                <li><a target="_parent" href="/docs/dev/compiling/">Compiling</a></li>
+                <li><a target="_parent" href="/docs/dev/contributing/">Contributing</a></li>
+                <li><a target="_parent" href="/docs/dev/dev-software-prerequisites/">Dev software prerequisites</a></li>
+                <li><a target="_parent" href="/docs/dev/software-prerequisites/">Software prerequisites</a></li>
+                <li><a target="_parent" href="/docs/dev/hardware-prerequisites/">Hardware prerequisites</a></li>
+            </ul>
+        </details>
+
+        <hr>
+
+        <details class="links-holder">
+            <summary>Legal</summary>
+            <ul>
+                <li><a target="_parent" href="/docs/legal/code-of-conduct/">Code of conduct</a></li>
+                <li><a target="_parent" href="/docs/legal/disclaimers/">Disclaimers</a></li>
+                <li><a target="_parent" href="/docs/legal/license/">License</a></li>
+            </ul>
+        </details>
+
+        <br>
+        <br>
+
+        <h3>Others</h3>
+
+        <ul>
+            <li><a target="_parent" href="https://github.com/BedrockLauncher/BedrockLauncher.Installer/releases/latest/download/BedrockLauncher.Installer.exe">Download Launcher</a></li>
+            <li><a target="_parent" href="/search/">Fallback Search Page</a></li>
+        </ul>
+
+        <br>
+        <br>
+    </div>
+    <div id="expanded-search">
+        <div id="control-bar">
+            <input placeholder="Type to search..." type="search" class="generic" id="search-box">
+            <button class="formal" id="actual-search-button">
+                <img class="clean" src="/assets/images/icons/search.svg">
+            </button>
         </div>
-    </header>
+        <div id="results"></div>
+    </div>
+    <div id="nav-bar-wrapper">
+        <div id="nav-bar">
+            <button class="formal no-border" id="hamburger">
+                <img id="hamburger-icon" class="clean" src="/assets/images/icons/hamburger.svg">
+            </button>
+            <div id="logo">
+                <a target="_parent" href="/" id="logo-link">
+                    <img id="logo-img" class="shrink clean" src="/assets/images/logos/logo-251x64.png">
+                </a>
+            </div>
+            <button class="formal no-border" id="search">
+                <img id="search-icon" class="clean" src="/assets/images/icons/search.svg">
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>

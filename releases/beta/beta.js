@@ -1,9 +1,23 @@
-window.addEventListener("load", async function () {
-    var versionContainer = document.getElementById("version-container");
+var pageIndex = 1;
+var lastPageIndex;
+var versionContainer;
+var fetchCache = [];
 
-    var releasesFetch = await fetch("https://api.github.com/repos/BedrockLauncher/BedrockLauncher-Beta/releases");
-    var releasesJson = await releasesFetch.json();
-    
+var newer;
+var older;
+
+async function load(page) {
+    var releasesJson;
+    if (fetchCache[page]) {
+        releasesJson = fetchCache[page]
+    } else {
+        var releasesFetch = await fetch(`https://api.github.com/repos/BedrockLauncher/BedrockLauncher-Beta/releases?per_page=10&page=${page}`);
+        releasesJson = await releasesFetch.json();
+        fetchCache[page] = releasesJson;
+    }
+
+    versionContainer.innerText = "";
+
     for (var releaseIndex in releasesJson) {
         var release = releasesJson[releaseIndex];
         var showDown = new showdown.Converter();
@@ -14,16 +28,73 @@ window.addEventListener("load", async function () {
         var brElement = document.createElement("br");
         var summaryElement = document.createElement("summary");
         var bodyContainer = document.createElement("div");
-        
+        var viewOnGithub = document.createElement("a");
+
+        viewOnGithub.innerText = "View on GitHub";
+        viewOnGithub.href = release.html_url;
+        viewOnGithub.target = "_blank";
+
         summaryElement.innerText = title;
-        
+
         bodyContainer.innerHTML = bodyHTML;
-        
+        bodyContainer.appendChild(brElement);
+        bodyContainer.appendChild(viewOnGithub);
+
         detailsElement.classList.add("hidden-ans");
         detailsElement.appendChild(summaryElement);
         detailsElement.appendChild(bodyContainer);
-        
+
         versionContainer.appendChild(detailsElement);
         versionContainer.appendChild(brElement);
     }
+    
+    pageIndexElement.innerText = "Page " + pageIndex;
+
+    if (page == 1 || lastPageIndex == 1) {
+        newer.classList.add("disabled");
+        newerButton.classList.add("disabled");
+    } else {
+        newer.classList.remove("disabled");
+        newerButton.classList.remove("disabled");
+    }
+
+    var nextFetch = await fetch(`https://api.github.com/repos/BedrockLauncher/BedrockLauncher-Beta/releases?per_page=10&page=${page + 1}`);
+    var nextFetchJson = await nextFetch.json();
+    if (nextFetchJson.length == 0) {
+        lastPageIndex = pageIndex;
+    } else {
+        fetchCache[page + 1] = nextFetchJson;
+    }
+
+    if (page == lastPageIndex || lastPageIndex == 1) {
+        older.classList.add("disabled");
+        olderButton.classList.add("disabled");
+    } else {
+        older.classList.remove("disabled");
+        olderButton.classList.remove("disabled");
+    }
+}
+
+window.addEventListener("load", async function () {
+    load(pageIndex);
+
+    newer = document.getElementById("newer");
+    older = document.getElementById("older");
+    newerButton = document.getElementById("newer-button");
+    olderButton = document.getElementById("older-button");
+    pageIndexElement = document.getElementById("page-index");
+    versionContainer = document.getElementById("version-container");
+
+    newer.addEventListener("click", function () {
+        if (!newer.classList.contains("disabled")) {
+            pageIndex--;
+            load(pageIndex);
+        }
+    });
+    older.addEventListener("click", function () {
+        if (!older.classList.contains("disabled")) {
+            pageIndex++;
+            load(pageIndex);
+        }
+    });
 })

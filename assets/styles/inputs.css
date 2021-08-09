@@ -7,7 +7,7 @@ button.center {
     margin: auto;
 }
 
-input[type="text"] {
+input[type="text"], input[type="search"] {
     border: none;
     border-radius: var(--border-evident-seperator);
     padding: 0px;
@@ -16,8 +16,8 @@ input[type="text"] {
 input.generic {
     background-color: #131313;
     text-align: center;
-    padding: 4px;
-    height: 30px;
+    padding: var(--margin-minor);
+    height: var(--input-regular-height);
 }
 
 input.generic:focus,
@@ -122,4 +122,42 @@ button.generic.right-button img,
 button.generic.left-button img {
     width: var(--icon-minor);
     box-shadow: none;
+}
+
+details.links-holder > summary {
+    font-family: "MinecraftTen";
+    text-shadow: 0px var(--shadow-depth-attention) 0px var(--shadow-color-evident);
+    margin: 0px;
+    font-size: var(--font-size-h4);
+}
+
+details.links-holder > summary {
+    list-style-type: none;
+}
+
+details.links-holder > summary,
+details.links-holder > summary::before {
+    cursor: pointer;
+    user-select: none;
+}
+
+details.links-holder > summary::before {
+    content: "";
+    margin-right: var(--margin-minor);
+    display: inline-block;
+    width: var(--icon-minor);
+    height: var(--icon-minor);
+    background-image: url(/assets/images/icons/blunt-arrow-down.svg);
+    background-size: var(--icon-minor);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+details.links-holder > summary::before {
+    transition-duration: var(--transition-duration-general);
+    transform: rotate(-90deg);
+}
+
+details.links-holder[open] > summary::before {
+    transform: rotate(0deg);
 }

@@ -1,0 +1,9 @@
+@import url("/assets/styles/server.min.css");
+
+#older {
+    margin-left: var(--margin-major);
+}
+
+#newer {
+    margin-right: var(--margin-major);
+}

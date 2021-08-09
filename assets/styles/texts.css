@@ -1,18 +1,31 @@
-a {
+a:not([href]) {
     cursor: default;
 }
 
 a[href] {
     cursor: pointer;
-    color: var(--url-color);
     text-decoration: none;
+}
+
+a[href]:not(.clean),
+a.color:not(.clean) {
+    color: var(--url-color);
+}
+
+a[href]:not(.clean):hover,
+a.color:not(.clean):hover {
+    text-decoration: underline;
 }
 
 a.simple {
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
-    color: white;
+}
+
+a.disabled {
+    filter: brightness(0.2);
+    cursor: default;
 }
 
 * {
