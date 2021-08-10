@@ -47,9 +47,9 @@ const Navbar = () => {
               label='download'>Download
             </NavbarLink>
             
-            <button className='search-btn' disabled onClick={handleSearch}>
+            <Link to='/search' className='search-btn' /* onClick={handleSearch} */>
               {!searchOpen ? <SearchIcon /> : <CancelIcon className='cancel-icon' />}
-            </button>
+            </Link>
             <button className='hamburger-btn' onClick={handleSideBarOpen}>
               {!navOpen ? <HamburgerIcon /> : <CancelIcon className='cancel-icon' />}
             </button>

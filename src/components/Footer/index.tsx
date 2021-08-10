@@ -17,9 +17,9 @@ const index = () => {
               Credits
             </FooterLinkItem>
             <FooterLinkItem label='repo link' goTo="https://github.com/BedrockLauncher/BedrockLauncher">
-              Sources
+              Source
             </FooterLinkItem>
-            <FooterLinkItem label='license link' goTo="https://github.com/BedrockLauncher/BedrockLauncher/blob/master/LICENSE.txt">
+            <FooterLinkItem label='license link' goTo="https://github.com/BedrockLauncher/BedrockLauncher/tree/master/docs/LICENSE.md">
               License
             </FooterLinkItem>
             <FooterLinkItem label='releases link' goTo="https://github.com/BedrockLauncher/BedrockLauncher/releases">

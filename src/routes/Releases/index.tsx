@@ -1,43 +1,25 @@
-import { useState, useEffect, createContext, FC } from "react"
+import { useState } from "react"
 import './index.scss'
 import Accordion from "../../components/Accordion"
 import banner0 from '../../assets/images/banners/1.13_technically_updated_java.jpg'
 import banner1 from '../../assets/images/banners/1.15_buzzy_bees_update.jpg'
 import CategorySelection from "../../components/CategorySelection"
-import GitHubReleases from "../../util/GitHubReleases"
-
-export const ReleasesContext = createContext({ public: [], beta: [] } as { public: GitHubReleases[], beta: GitHubReleases[] })
-export const ReleasesProvider: FC = ({ children }) => {
-  const [publics, setPublics] = useState([] as any[])
-  const [betas, setBetas] = useState([] as any[])
-
-  const getReleases = async(going: boolean) => {
-    if(!going) return
-    const res1 = await fetch('https://api.github.com/repos/BedrockLauncher/BedrockLauncher/releases')
-    if(!going) return
-    setPublics((await res1.json() as GitHubReleases[]).filter(p => p.name !== '0.0.0.0'))
-
-    if(!going) return
-    const res0 = await fetch('https://api.github.com/repos/BedrockLauncher/BedrockLauncher-Beta/releases')
-    if(!going) return
-    setBetas(await res0.json())
-  }
-
-  useEffect(() => {
-    let going = true
-    getReleases(going)
-    return () => { going = false }
-  }, [])
-
-  return (
-    <ReleasesContext.Provider value={{ public: publics, beta: betas }}>
-      {children}
-    </ReleasesContext.Provider>
-  )
-}
+import { useContext } from "react"
+import SearchBox from "../../components/SearchBox"
+import { ReleasesContext } from './ReleasesProvider'
 
 const ReleasesRoute = () => {
   document.title = 'Releases - Bedrock Launcher'
+
+  const releases = useContext(ReleasesContext)
+
+  const [results, setResults] = useState(0)
+  const [filterText, setFilterText] = useState('')
+  const handleFilterTextChange = (value: string) => {
+    setFilterText(value)
+    if(value === '') setResults(0)
+    if(value !== '') setResults([...releases.public, ...releases.beta].filter(v => v.name.toLowerCase().includes(value.toLowerCase())).length)
+  }
 
   return (
     <div className='releases'>
@@ -52,11 +34,25 @@ const ReleasesRoute = () => {
             <CategorySelection.Item to='/releases/beta' bg={banner1} title='Beta Releases' description='Releases that are work in progress' />
           </CategorySelection.Parent>
           <hr />
+          <form>
+            <h3>Search</h3>
+            <SearchBox results={results} value={filterText}handleFilter={handleFilterTextChange}  />
+          </form>
           <ReleasesContext.Consumer>
             {values => (
-              [...values.public, ...values.beta].map((rel) => {
-                return <Accordion usesMD replaceURLs githubURL={rel.html_url} key={rel.id} title={rel.name} desc={rel.body} /> 
-              })
+              [...values.public, ...values.beta].map((rel) => 
+                <Accordion
+                  usesMD
+                  replaceURLs
+                  githubURL={rel.html_url}
+                  key={rel.id}
+                  title={rel.name}
+                  desc={rel.body}
+                  style={{
+                    display: (filterText === '' || rel.name.toLowerCase().includes(filterText.toLowerCase()) ? 'block' : 'none') 
+                  }}
+                /> 
+              )
             )}
           </ReleasesContext.Consumer>
         </div>

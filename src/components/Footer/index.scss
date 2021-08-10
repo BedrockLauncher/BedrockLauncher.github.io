@@ -3,6 +3,7 @@
   background: #262626;
   padding: 1.6rem 0 2.1rem 0;
   text-align: center;
+  font-family: 'Noto Sans';
 
   hr {
     margin: 1rem 0 0 0;
@@ -32,14 +33,20 @@
 
     a {
       color: white;
-      font-weight: 600;
+      font-family: 'Noto Sans';
+      text-decoration: none;
+      font-size: 0.9rem;
     
       &:hover {
         color: hsl(0, 0%, 75%);
       }
 
       &:focus {
-        outline: 1px solid white;
+        outline: none;
+      }
+
+      &:focus-visible {
+        text-decoration: underline;
       }
     }
   }
@@ -60,11 +67,12 @@
     p {
       color: white;
       padding: 0.2rem 0;
+      font-size: 0.9rem;
     }
 
     span {
       padding: 0.1rem 0;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: hsl(0, 0%, 55%);
     }
   }

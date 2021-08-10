@@ -10,6 +10,7 @@
   z-index: -1;
   overflow-y: auto;
   box-shadow: -2px 0 2px 0 #00000077;
+  font-family: 'Noto Sans';
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -72,6 +73,7 @@
       width: 100%;
       padding: 0.5rem 2rem;
       color: #2bbd28;
+      font-size: 0.95rem;
       text-decoration: none;
       border: 1px solid transparent;
 

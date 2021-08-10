@@ -1,7 +1,10 @@
 .cat-selection {
   display: grid;
+  flex-direction: row;
   width: 100%;
-  row-gap: 1rem;
+  gap: 1rem 1rem;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
 
   .cat-link {
     box-sizing: content-box;
@@ -41,6 +44,8 @@
 
     p {
       color: white;
+      font-family: 'Noto Sans';
+      font-size: 0.9rem;
       text-shadow: 0 2px 0 #00000069;
     }
 

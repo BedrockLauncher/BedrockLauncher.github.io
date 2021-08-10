@@ -18,7 +18,7 @@ function replaceLinkTags(message: string, doIt?: boolean) {
   })
 }
 
-const FAQDetails: FC<{ title: string, desc: string, githubURL?: string, usesMD?: boolean, replaceURLs?: boolean }> = ({ title, desc, githubURL, usesMD, replaceURLs }) => {
+const FAQDetails: FC<{ style?: React.CSSProperties, title: string, desc: string, githubURL?: string, usesMD?: boolean, replaceURLs?: boolean }> = ({ title, desc, githubURL, usesMD, replaceURLs, style }) => {
   const [open, setOpen] = useState(false)
   const [openSemi, setOpenSemi] = useState(false)
   const [descr] = useState(desc.replaceAll('%PUBLIC_PATH%', process.env.PUBLIC_URL))
@@ -38,7 +38,7 @@ const FAQDetails: FC<{ title: string, desc: string, githubURL?: string, usesMD?:
   }
 
   return (
-    <div className={'faqdetails'  + (openSemi ? ' open-semi' : '') + (open ? ' open' : '')}>
+    <div className={'faqdetails'  + (openSemi ? ' open-semi' : '') + (open ? ' open' : '')} style={style}>
       <div className='faqdetails-header' tabIndex={0} onClick={handleOpen} onKeyDown={handleKeyDown}><span><DownArrow /></span>{title}</div>
       <div className={'faqdetails-content' + (usesMD ? ' md' : '')}>
         <div dangerouslySetInnerHTML={{__html: usesMD ? replaceLinkTags(markdownConverter.makeHtml(descr), replaceURLs) : replaceLinkTags(descr, replaceURLs)}}></div>

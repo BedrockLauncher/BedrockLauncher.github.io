@@ -47,9 +47,9 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
             <li><a target='_blank' rel="noreferrer" href='https://github.com/KalmeMarq/bedrock-launcher-website' onClick={onClose}>Website Source</a></li>
             <li><Link to='/docs/dev/compiling' onClick={onClose}>Compiling</Link></li>
             <li><Link to='/docs/dev/contributing' onClick={onClose}>Contributing</Link></li>
-            <li><Link to='/docs/dev/dev-software-prerequisites' onClick={onClose}>Dev Software Pprerequisites</Link></li>
-            <li><Link to='/docs/dev/software-prerequisites' onClick={onClose}>Software Pprerequisites</Link></li>
-            <li><Link to='/docs/dev/hardware-prerequisites' onClick={onClose}>Hardware Pprerequisites</Link></li>
+            <li><Link to='/docs/dev/dev-software-prerequisites' onClick={onClose}>Dev Software Prerequisites</Link></li>
+            <li><Link to='/docs/dev/software-prerequisites' onClick={onClose}>Software Prerequisites</Link></li>
+            <li><Link to='/docs/dev/hardware-prerequisites' onClick={onClose}>Hardware Prerequisites</Link></li>
           </ul>
           <h4>Legal</h4>
           <ul>

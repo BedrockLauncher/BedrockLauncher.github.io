@@ -4,7 +4,7 @@ import Accordion from '../../../components/Accordion'
 import '../index.scss'
 import { ReleasesCategories } from '../../../util/Releases'
 import GoBack from '../../../components/GoBack'
-import { ReleasesContext } from '..'
+import { ReleasesContext } from '../ReleasesProvider'
 import ButtonText from '../../../components/ButtonText'
 import { useEffect } from 'react'
 

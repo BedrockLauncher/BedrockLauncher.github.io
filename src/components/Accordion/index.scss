@@ -1,6 +1,8 @@
 .faqdetails {
   // min-height: 40px;
   border: 1px solid rgb(94, 94, 94);
+  font-family: 'Noto Sans';
+  font-weight: 100;
 
   .faqdetails-content {
     display: none;
@@ -23,6 +25,7 @@
 
     p {
       padding: 0.4rem 0;
+      font-size: 0.9rem;
     }
 
     h5 {
@@ -31,6 +34,7 @@
 
     a {
       color: hsl(119, 65%, 40%);
+      font-size: 0.9rem;
 
       &:hover {
         color: hsl(119, 65%, 30%)
@@ -88,8 +92,9 @@
     place-items: center;
     color: white;
     height: max-content;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: 'Noto Sans Bold';
     padding: 0.5rem 0.6rem;
     border: 1px solid transparent;
     user-select: none;
