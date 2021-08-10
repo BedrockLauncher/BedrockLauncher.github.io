@@ -9,7 +9,6 @@ import { ReactComponent as HamburgerIcon } from '../../assets/images/icons/hambu
 import { ReactComponent as CancelIcon } from '../../assets/images/icons/cancel.svg'
 import docs from '../../assets/images/icons/doc.svg'
 import { Link } from 'react-router-dom'
-import NavbarLink from './components/NavbarLink'
 import SideNavbar from './components/SideNavbar'
 import SearchSidebar from './components/SearchSidebar'
 import { useState } from 'react'
@@ -37,16 +36,6 @@ const Navbar = () => {
         </Link>
         <nav className='header-nav'>
           <ul>
-            <NavbarLink goTo='/' icon={<HomeIcon aria-label='home icon' />} label='home'>Home</NavbarLink>
-            <NavbarLink goTo='/docs' icon={docs} label='releases'>Docs</NavbarLink>
-            <NavbarLink goTo='/releases' icon={<FlaskIcon aria-label='releases icon' />} label='releases'>Releases</NavbarLink>
-            <NavbarLink goTo='/faq' icon={<QuestionIcon aria-label='faq icon' />} label='faq'>FAQ</NavbarLink>
-            <NavbarLink
-              goTo='/downloads'
-              icon={<DownloadIcon aria-label='download icon' />}
-              label='download'>Download
-            </NavbarLink>
-            
             <Link to='/search' className='search-btn' /* onClick={handleSearch} */>
               {!searchOpen ? <SearchIcon /> : <CancelIcon className='cancel-icon' />}
             </Link>

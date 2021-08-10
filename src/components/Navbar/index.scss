@@ -165,33 +165,13 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .hamburger-btn {
-    display: flex;
-  }
+.hamburger-btn {
+  display: flex;
+}
 
-  .navbar-link {
-    display: none;
-  }
-
-  .navbar-link-cont {
-    &:hover {
-      span {
-        display: none;  
-      }
-    }
-
-    &:focus-visible {
-      span {
-        display: none;  
-      }
-    }
-  }
-
-  .sidebar {
-    display: none;
+.sidebar {
+  display: none;
     &.open {
       display: block;
-    }
   }
 }
