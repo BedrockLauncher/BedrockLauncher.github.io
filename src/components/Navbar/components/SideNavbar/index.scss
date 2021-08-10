@@ -93,11 +93,9 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .sidebar {
+.sidebar {
     display: none;
     &.open {
       display: block;
-    }
   }
 }
