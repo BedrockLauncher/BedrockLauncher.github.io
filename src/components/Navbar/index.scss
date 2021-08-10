@@ -1,0 +1,177 @@
+.navbar {
+  background: #262626;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 100;
+  padding-top: 2px;
+  box-shadow: 0 2px 4px #00000077;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    height: 100%;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+  }
+}
+
+.nav-logo {
+  width: max-content;
+  height: 40px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem 0 0;
+  }
+
+  color: white;
+  text-decoration: none;
+  font-family: 'Minecraft';
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  text-anchor: start;
+  place-content: center;
+  font-size: 1.1rem;
+  place-items: center;
+  font-weight: 100;
+  font-style: normal;
+
+  &:hover {
+    color: rgb(190, 190, 190);
+  }
+
+   &:focus-visible {
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+.navbar-link {
+  height: 100%;
+  display: flex;
+  place-items: center;
+
+  svg, img {
+    width: 32px;
+    height: 32px;
+  }
+
+  img {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+}
+
+@keyframes aaab {
+  0% { transform: translate(100%); }
+  10% { transform: translate(100%); }
+  100% { transform: translate(0); }
+}
+
+@keyframes aabb {
+  0% { transform: translate(0); }
+  10% { transform: translate(0); }
+  100% { transform: translate(100%); }
+}
+
+.navbar-link-cont {
+  display: block;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  height: 100%;
+  text-decoration: none;
+  font-family: 'Minecraft';
+  display: flex;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 0;
+
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.2);
+    span {
+      font-size: 1rem;
+      margin-left: 0.3rem;
+    }
+  }
+
+  span {
+    transition: font 300ms, margin 300ms;
+    font-size: 0;
+    margin-left: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid white;
+    span {
+      font-size: 1rem;
+      margin-left: 0.3rem;
+    }
+  }
+}
+
+.hamburger-btn,
+.search-btn {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border-color: white;
+  }
+  
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    background: #ffffff33;
+  }
+
+  &:disabled {
+    filter: brightness(60%);
+  }
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-logo {
+    font-size: 0;
+  }
+}
+
+.hamburger-btn {
+  display: flex;
+}
+
+.sidebar {
+  display: none;
+    &.open {
+      display: block;
+  }
+}

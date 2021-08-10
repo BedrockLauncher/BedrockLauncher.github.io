@@ -1,0 +1,64 @@
+.search-route {
+  background: #323232;
+  height: 100%;
+  margin-top: 50px;
+  padding: 3rem 0;
+
+  h3 {
+    color: white;
+    font-family: 'Noto Sans Bold';
+    font-size: 1rem;
+    padding: 0 0 0.1rem 0;
+  }
+}
+
+.line-h {
+  width: 100%;
+  background: #777;
+  height: 1px;
+  margin: 1rem 0;
+}
+
+.search-item {
+  font-family: 'Noto Sans';
+
+  a {
+    color: #27CE40;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .formatted-url {
+    font-family: 'Noto Sans Bold';
+    color: white;
+    font-size: 0.85rem;
+    i {
+      font-style: normal;
+      font-size: 0.7rem;
+      padding: 0 0.2rem;
+    }
+  }
+
+  b {
+    font-family: 'Noto Sans Bold';
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: white;
+
+    b {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}

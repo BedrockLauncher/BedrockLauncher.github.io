@@ -1,0 +1,52 @@
+.docs {
+  background: #323232;
+  height: 100%;
+  margin-top: 50px;
+  font-family: 'Noto Sans';
+  font-size: 0.95rem;
+
+  main {
+    padding: 2rem;
+  
+    h2 {
+      font-family: 'MinecraftTen';
+      color: white;
+      font-size: 26px;
+      text-shadow: 0 4px 0 #00000069;
+      padding: 1rem 0;
+      text-rendering: optimizeLegibility;
+      font-weight: 100;
+      font-style: normal;
+    
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    ul {
+      margin-left: 2rem;
+      color: white;
+    }
+
+    li {
+      padding: 0.1rem 0;
+    }
+
+    a {
+      color: hsl(119, 65%, 45%);
+      text-decoration: none;
+
+      &:hover {
+        color: hsl(119, 65%, 35%);
+      }
+      
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.notfound {
+  background: #323232;
+  height: 100%;
+  margin-top: 50px;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  color: white;
+
+  h2 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+  }
+}

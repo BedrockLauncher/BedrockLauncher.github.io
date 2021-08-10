@@ -1,0 +1,97 @@
+.searchbox {
+  display: flex;
+  height: 38px;
+  min-height: 38px;
+  background: hsl(0, 0%, 7%);
+  border-radius: 4px;
+  place-items: center;
+  border: 1px solid hsl(0, 0%, 7%);
+
+  &:hover {
+    background: hsl(0, 0%, 5%);
+  }
+
+  &:focus-within {
+    border: 1px solid hsl(0, 0%, 100%);
+  }
+
+  .reset-btn {
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    margin: 4px 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    padding: 0 2px;
+    place-content: center;
+    place-items: center;
+
+    &:hover {
+      background: hsl(0, 0%, 17%);
+    }
+
+    svg {
+      width: 11px;
+      height: 11px;
+      path {
+        fill: #ccc;
+      }
+    }
+  }
+
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    margin-left: 10px;
+
+    path {
+      fill: #eee;
+    }
+  }
+
+  input[type="text"] {
+    background: none;
+    border: none;
+    font-family: 'Noto Sans';
+    height: 100%;
+    color: white;
+    width: 100%;
+    caret-color: white;
+    padding: 0 0.4rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .results {
+    padding: 0 5px;
+    color: white;
+    margin: 4px 7px 4px 10px;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    min-width: max-content;
+    background: hsl(0, 0%, 17%);
+    height: 22px;
+    position: relative;
+    font-size: 0.9rem;
+
+    &::before {
+      position: relative;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 20px;
+      top: 1px;
+      left: -12px;
+      background: #777;
+    }
+  }
+}
