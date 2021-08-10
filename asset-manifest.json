@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c5ecd4c.chunk.css",
+    "main.css": "/static/css/main.071d359f.chunk.css",
     "main.js": "/static/js/main.895de973.chunk.js",
     "main.js.map": "/static/js/main.895de973.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cfb1bb8b.js",
@@ -8,7 +8,7 @@
     "static/js/2.37831309.chunk.js": "/static/js/2.37831309.chunk.js",
     "static/js/2.37831309.chunk.js.map": "/static/js/2.37831309.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9c5ecd4c.chunk.css.map": "/static/css/main.9c5ecd4c.chunk.css.map",
+    "static/css/main.071d359f.chunk.css.map": "/static/css/main.071d359f.chunk.css.map",
     "static/js/2.37831309.chunk.js.LICENSE.txt": "/static/js/2.37831309.chunk.js.LICENSE.txt",
     "static/media/1.08_cats_and_pandas.7022213f.jpg": "/static/media/1.08_cats_and_pandas.7022213f.jpg",
     "static/media/1.09_combat_update_java.18c9c41e.jpg": "/static/media/1.09_combat_update_java.18c9c41e.jpg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.cfb1bb8b.js",
     "static/js/2.37831309.chunk.js",
-    "static/css/main.9c5ecd4c.chunk.css",
+    "static/css/main.071d359f.chunk.css",
     "static/js/main.895de973.chunk.js"
   ]
 }
