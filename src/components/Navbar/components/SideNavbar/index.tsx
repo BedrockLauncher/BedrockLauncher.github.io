@@ -59,7 +59,8 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
           </ul>
           <h3>Others</h3>
           <ul>
-          <li><a rel="noreferrer" href='https://github.com/BedrockLauncher/BedrockLauncher.Installer/releases/latest/download/BedrockLauncher.Installer.exe' target='_blank'>Download Launcher</a></li>
+            <li><a rel="noreferrer" href='/downloads'>Download Launcher</a></li>
+            <li><a rel="noreferrer" href='/search'>Search</a></li>
           </ul>
         </nav>
       </div>
