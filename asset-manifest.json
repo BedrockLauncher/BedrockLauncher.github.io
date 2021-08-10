@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c5ecd4c.chunk.css",
+    "main.js": "/static/js/main.895de973.chunk.js",
+    "main.js.map": "/static/js/main.895de973.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cfb1bb8b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cfb1bb8b.js.map",
+    "static/js/2.37831309.chunk.js": "/static/js/2.37831309.chunk.js",
+    "static/js/2.37831309.chunk.js.map": "/static/js/2.37831309.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9c5ecd4c.chunk.css.map": "/static/css/main.9c5ecd4c.chunk.css.map",
+    "static/js/2.37831309.chunk.js.LICENSE.txt": "/static/js/2.37831309.chunk.js.LICENSE.txt",
+    "static/media/1.08_cats_and_pandas.7022213f.jpg": "/static/media/1.08_cats_and_pandas.7022213f.jpg",
+    "static/media/1.09_combat_update_java.18c9c41e.jpg": "/static/media/1.09_combat_update_java.18c9c41e.jpg",
+    "static/media/index.scss": "/static/media/original_image.85b3371b.jpg",
+    "static/media/1.13_technically_updated_java.2a0c18eb.jpg": "/static/media/1.13_technically_updated_java.2a0c18eb.jpg",
+    "static/media/1.15_buzzy_bees_update.f5d07c6f.jpg": "/static/media/1.15_buzzy_bees_update.f5d07c6f.jpg",
+    "static/media/BedrockLauncher_128x128.d8089ba5.png": "/static/media/BedrockLauncher_128x128.d8089ba5.png",
+    "static/media/CarJem_standalone.19a73997.gif": "/static/media/CarJem_standalone.19a73997.gif",
+    "static/media/CoolAbhi1290.382eb5b0.png": "/static/media/CoolAbhi1290.382eb5b0.png",
+    "static/media/fonts.css": "/static/media/NotoSans-Regular.a50ccd7e.ttf",
+    "static/media/blunt-arrow-down.d13642b7.svg": "/static/media/blunt-arrow-down.d13642b7.svg",
+    "static/media/cancel.5b7ce760.svg": "/static/media/cancel.5b7ce760.svg",
+    "static/media/cancel.eca8d95a.svg": "/static/media/cancel.eca8d95a.svg",
+    "static/media/discord.a1e09d96.svg": "/static/media/discord.a1e09d96.svg",
+    "static/media/down-arrow.7ebb6912.svg": "/static/media/down-arrow.7ebb6912.svg",
+    "static/media/hamburger.b89872a6.svg": "/static/media/hamburger.b89872a6.svg",
+    "static/media/left_arrow.b98eaaf1.svg": "/static/media/left_arrow.b98eaaf1.svg",
+    "static/media/logo.b56456b0.png": "/static/media/logo.b56456b0.png",
+    "static/media/other_early_console_era.618fe9af.jpg": "/static/media/other_early_console_era.618fe9af.jpg",
+    "static/media/search.21aaa5e7.svg": "/static/media/search.21aaa5e7.svg",
+    "static/media/search.637db432.svg": "/static/media/search.637db432.svg",
+    "static/media/twitter.1a201983.svg": "/static/media/twitter.1a201983.svg",
+    "static/media/youtube.f37b2fd5.svg": "/static/media/youtube.f37b2fd5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfb1bb8b.js",
+    "static/js/2.37831309.chunk.js",
+    "static/css/main.9c5ecd4c.chunk.css",
+    "static/js/main.895de973.chunk.js"
+  ]
+}
