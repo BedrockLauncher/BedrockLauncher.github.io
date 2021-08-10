@@ -19,13 +19,14 @@ export interface IGoogleSearchItem {
 }
 
 const SearchRoute = () => {
+  const GOOGLE_SEARCH_KEY = 'AIzaSyDao5Lwp0lQM9VF8OVf3zzSR92M5U_XLPA'
+  const GOOGLE_SEARCH_CX = '5f283ba92be0b61e1'
+  
   const [items, setItems] = useState([] as IGoogleSearchItem[])
   const [results, setResults] = useState(0)
   const [filterText, setFilterText] = useState('')
-
-  const key = 'AIzaSyDao5Lwp0lQM9VF8OVf3zzSR92M5U_XLPA'
-  const cx = '5f283ba92be0b61e1'
-  const baseurl = `https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=`
+  
+  const baseurl = `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_SEARCH_KEY}&cx=${GOOGLE_SEARCH_CX}&q=`
 
   const handleFilterTextChange = (value: string) => {
     setFilterText(value)
