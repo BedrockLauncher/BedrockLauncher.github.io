@@ -29,7 +29,7 @@ const index = () => {
         </nav>
         <div className='footer-cards'>
           <FooterCardItem label='Carjem' link='https://carjem.carrd.co/'icon={carjem} title='Carjem' description='Creator of Bedrock Launcher' />
-          <FooterCardItem label='CoolAbhi1290' link='https://coolabhi1290.github.io/' icon={coolAbhi} title='CoolAbhi1290' description="Creator of Bedrock Launcher's Website" />
+          <FooterCardItem label='TrésAbhi' link='https://tresabhi.github.io/' icon={coolAbhi} title='TrésAbhi' description="Creator of Bedrock Launcher's Website" />
           <FooterCardItem label='KalmeMarq' link='https://github.com/KalmeMarq' icon='https://github.com/KalmeMarq.png?size=80' title='KalmeMarq' description="Developer of Bedrock Launcher's Website" />
         </div>
         <Link to='/credits' onClick={() => window.scroll(0, 0)} className='copyright'>Carjem {`${currentYear > 2021 ? 2021 + '-' : ''}${currentYear}`} &#169; Not associated or approved by Mojang</Link>
