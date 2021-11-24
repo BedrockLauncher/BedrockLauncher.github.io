@@ -54,7 +54,7 @@ const CreditsRoute = () => {
           </ul>
           <h2>Website Developers</h2>
           <ul>
-            <CreditsCardItem url='https://coolabhi1290.github.io/' name='CoolAbhi1290' icon='https://github.com/CoolAbhi1290.png?size=80' />
+            <CreditsCardItem url='https://tresabhi.github.io/' name='TresAbhi' icon='https://github.com/TresAbhi.png?size=80' />
             <CreditsCardItem url='https://twitter.com/KalmeMarq' name='KalmeMarq' icon='https://github.com/KalmeMarq.png?size=80' />
           </ul>
           <h2>GitHub Contributors</h2>
@@ -65,7 +65,7 @@ const CreditsRoute = () => {
           </ul>
           <h2>Other Helpers</h2>
           <ul>
-            <CreditsCardItem url='https://www.youtube.com/c/LizterZapZap' name='LizterZapZap' icon='https://pbs.twimg.com/profile_images/1407542076674244611/yEPMWA0t_80x80.jpg' />
+            <CreditsCardItem url='https://www.youtube.com/c/LizterZapZap' name='LizterZapZap' icon='https://i.imgur.com/QqC9Vqs.png' />
           </ul>
         </div>
       </main>  
