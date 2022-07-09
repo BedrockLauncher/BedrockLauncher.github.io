@@ -67,6 +67,10 @@ const CreditsRoute = () => {
           <ul>
             <CreditsCardItem url='https://www.youtube.com/c/LizterZapZap' name='LizterZapZap' icon='https://i.imgur.com/QqC9Vqs.png' />
           </ul>
+          <h2>Localization</h2>
+          <ul>
+          <CreditsCardItem url='https://crowdin.com/project/bedrocklauncher/members' name='BedrockLauncher Crowdin Localization team' icon='https://crowdin.com/images/crowdin-logo-icon.svg' />
+          </ul>
         </div>
       </main>  
     </div>
