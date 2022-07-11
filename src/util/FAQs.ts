@@ -37,7 +37,7 @@ const FAQs: IFAQItem[] = [
     id: 'faq-b751e93b',
     tag: 'versions',
     title: 'What versions can I access?',
-    body: `<p>You can access most of the versions available for download by the Microsoft Store. We are aware that some versions are missing, and we are working on it.</p>`
+    body: `<p>You can access most of the versions available for download by the Microsoft Store. This includes betas and Previews. We are aware that some versions are missing, and we are working on it.</p>`
   },
   {
     id: 'faq-ab59111b',
@@ -49,7 +49,7 @@ const FAQs: IFAQItem[] = [
     id: 'faq-560145e1',
     tag: 'misc',
     title: "Why isn't my language supported?",
-    body: `<p>We are only a small team of 2 people, and it is hard for us to translate a whole launcher. That's why, we are asking for you help! Visit our <a rel="noreferrer" href="https://github.com/BedrockLauncher/BedrockLauncher" target='_blank'>repository</a> and create a fork with your translations.</p>`
+    body: `<p>You can help translate the Launcher <a rel="noneferrer" href="https://crowdin.com/project/bedrocklauncher" target='_blank'>here</a> in your language. Concact <a rel="noneferrer" href="https://crowdin.com/profile/metalmaniac" target='_blank'>here</a> if you have any questions regarding the localization.</p>`
   },
   {
     id: 'faq-7a94776d',
@@ -67,7 +67,7 @@ const FAQs: IFAQItem[] = [
     id: 'faq-65c7b97c',
     tag: 'misc',
     title: 'What platforms does this work on?',
-    body: `<p>Only Windows 10 for now. (Windows 11 too if Minecraft works on it)</p>`
+    body: `<p>Only Windows 10/11 for now.</p>`
   },
   {
     id: 'faq-683525c9',
@@ -84,8 +84,8 @@ const FAQs: IFAQItem[] = [
   {
     id: 'faq-8c9c0b49',
     tag: 'accounts',
-    title: 'How do I play Minecraft Betas?',
-    body: `<p>To play a beta, you can either create a custom installation for a specific beta version or play the Latest Beta version provided by default in the launcher.</p><img src="%PUBLIC_PATH%/images/latest_beta.png">`
+    title: 'How do I play Minecraft Betas/Previews?',
+    body: `<p>To play a beta or a Preview, you can either create a custom installation for a specific beta version or play the Latest Beta version provided by default in the launcher.</p><img src="%PUBLIC_PATH%/images/latest_beta.png">`
   },
   {
     id: 'faq-bdef087b',
@@ -127,7 +127,7 @@ const FAQs: IFAQItem[] = [
     id: 'faq-dfc054d7',
     tag: 'data',
     title: 'Why do my settings keep resetting?',
-    body: `<p>The main reason behind this could be the same as what happens with the Minecraft Java Launcher: different versions parse settings diffrently, and reset some as they see fit. There is nothing you can do about this.</p><p>One other contributing reason could be that different installations are accessing different insallation folders with diffrent settings. Read "Why do my worlds not show up sometimes?" for more info.</p>`
+    body: `<p>The main reason behind this could be the same as what happens with the Minecraft Java Launcher: different versions parse settings diffrently, and reset some as they see fit. There is nothing you can do about this.</p><p>One other contributing reason could be that different installations are accessing different insallation folders with diffrent settings. Read "Why do my worlds not show up sometimes?" for more information.</p>`
   }
 ]
 
