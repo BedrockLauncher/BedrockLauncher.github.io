@@ -1,11 +1,11 @@
-import logo from '../../../assets/images/logos/logo.png'
 import { useEffect, useState } from 'react'
 import { ReactComponent as Arrow } from '../../../assets/images/icons/blunt-arrow-down.svg'
+import { ReactComponent as DiscordIcon } from '../../../assets/images/icons/discord.svg'
 import { ReactComponent as TwitterIcon } from '../../../assets/images/icons/twitter.svg'
 import { ReactComponent as YoutubeIcon } from '../../../assets/images/icons/youtube.svg'
-import { ReactComponent as DiscordIcon } from '../../../assets/images/icons/discord.svg'
-import Covers from '../../../util/Covers'
+import logo from '../../../assets/images/logos/logo.png'
 import ButtonText from '../../../components/ButtonText'
+import Covers from '../../../util/Covers'
 
 const BannerSection = () => {
   const [covers] = useState(Covers.map(cover => cover.replace('%PUBLIC_PATH%', process.env.PUBLIC_URL)))
@@ -34,7 +34,7 @@ const BannerSection = () => {
       <h3>An unofficial Minecraft Bedrock for Windows 10 Launcher</h3>
     
       <div className='buttons-group0'>
-        <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher.Installer/releases/latest/download/BedrockLauncher.Installer.exe' rel="noreferrer" target='_blank' width={160}>
+        <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher-Beta/releases/latest/download/build.zip' rel="noreferrer" target='_blank' width={160}>
           Download
         </ButtonText>
         <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher' rel="noreferrer" target='_blank'  width={160}>
