@@ -45,6 +45,7 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
           <ul>
             <li><a target='_blank' rel="noreferrer" href='https://github.com/BedrockLauncher/BedrockLauncher/' onClick={onClose}>Launcher Source</a></li>
             <li><a target='_blank' rel="noreferrer" href='https://github.com/BedrockLauncher/BedrockLauncher.github.io' onClick={onClose}>Website Source</a></li>
+            <li><a target='_blank' rel="noreferrer" href='https://crowdin.com/projects/bedrocklauncher' onClick={onClose}>Localization</a></li>
             <li><Link to='/docs/dev/compiling' onClick={onClose}>Compiling</Link></li>
             <li><Link to='/docs/dev/contributing' onClick={onClose}>Contributing</Link></li>
             <li><Link to='/docs/dev/dev-software-prerequisites' onClick={onClose}>Dev Software Prerequisites</Link></li>

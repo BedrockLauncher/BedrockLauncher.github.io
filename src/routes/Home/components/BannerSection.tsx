@@ -31,7 +31,7 @@ const BannerSection = () => {
   return (
     <div className='main-section' style={{backgroundImage: 'url(' + covers[coverIndex] + ')'}}>
       <img src={logo} alt="" className='logo' />
-      <h3>An unofficial Minecraft Bedrock for Windows 10 Launcher</h3>
+      <h3>An unofficial Minecraft Bedrock for Windows 10/11 Launcher</h3>
     
       <div className='buttons-group0'>
         <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher-Beta/releases/latest/download/build.zip' rel="noreferrer" target='_blank' width={160}>

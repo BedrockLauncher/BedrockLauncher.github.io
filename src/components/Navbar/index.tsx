@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className='container'>
         <Link to='/' className='nav-logo' onClick={() => window.scroll(0, 0)}>
           <img src={img} alt="" />
-          Bedrock Launcher
+          Bedrock Launcher Lite
         </Link>
         <nav className='header-nav'>
           <ul>
