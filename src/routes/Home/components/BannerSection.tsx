@@ -34,7 +34,7 @@ const BannerSection = () => {
       <h3>An unofficial Minecraft Bedrock for Windows 10/11 Launcher</h3>
     
       <div className='buttons-group0'>
-        <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher-Beta/releases/latest/download/build.zip' rel="noreferrer" target='_blank' width={160}>
+        <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher/releases/tag/2022.8.23.79' rel="noreferrer" target='_blank' width={160}>
           Download
         </ButtonText>
         <ButtonText type='link' to='https://github.com/BedrockLauncher/BedrockLauncher' rel="noreferrer" target='_blank'  width={160}>
