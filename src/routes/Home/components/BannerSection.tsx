@@ -92,7 +92,13 @@ const BannerSection = () => {
         >
           <YoutubeIcon aria-label="youtube-icon" />
         </ButtonText>
-        <ButtonText type="button" content="icon" disabled width={40}>
+        <ButtonText
+          type="link"
+          content="icon"
+          target="_blank"
+          to="https://discord.gg/Ar5SRBZcqn"
+          width={40}
+        >
           <DiscordIcon aria-label="discord-icon" />
         </ButtonText>
       </div>
