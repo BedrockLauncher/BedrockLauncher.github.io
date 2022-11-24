@@ -1,63 +1,41 @@
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Home from './routes/Home'
-import Releases from './routes/Releases'
-import ReleasesProvider from './routes/Releases/ReleasesProvider'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import FAQRoute from './routes/FAQ'
-import FAQCategory from './routes/FAQ/FAQCategory'
-import ReleasesCategory from './routes/Releases/ReleasesCategory'
-import DocsRoute from './routes/Docs'
-import DocsCategory from './routes/Docs/DocsCategory'
-import CreditsRoute from './routes/Credits'
-import DownloadsRoute from './routes/Downloads'
-import NotFoundRoute from './routes/NotFound'
-import SearchRoute from './routes/Search'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import CreditsRoute from './routes/Credits';
+import DocsRoute from './routes/Docs';
+import DocsCategory from './routes/Docs/DocsCategory';
+import DownloadsRoute from './routes/Downloads';
+import FAQRoute from './routes/FAQ';
+import FAQCategory from './routes/FAQ/FAQCategory';
+import Home from './routes/Home';
+import NotFoundRoute from './routes/NotFound';
+import Releases from './routes/Releases';
+import ReleasesCategory from './routes/Releases/ReleasesCategory';
+import ReleasesProvider from './routes/Releases/ReleasesProvider';
+import SearchRoute from './routes/Search';
 
 const App = () => {
   return (
     <ReleasesProvider>
       <Router>
         <Navbar></Navbar>
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/docs/:type/:category'>
-            <DocsCategory />
-          </Route>
-          <Route path='/docs'>
-            <DocsRoute />
-          </Route>
-          <Route exact path='/releases'>
-            <Releases />
-          </Route>
-          <Route path='/releases/:category'>
-            <ReleasesCategory />
-          </Route>
-          <Route exact path='/faq'>
-            <FAQRoute />
-          </Route>
-          <Route path='/faq/:category'>
-            <FAQCategory />
-          </Route>
-          <Route path='/downloads'>
-            <DownloadsRoute />
-          </Route>
-          <Route path='/credits'>
-            <CreditsRoute />
-          </Route>
-          <Route path='/search'>
-            <SearchRoute />
-          </Route>
-          <Route path='*'>
-            <NotFoundRoute />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/docs" element={<DocsRoute />} />
+          <Route path="/docs/:type/:category" element={<DocsCategory />} />
+          <Route path="/releases" element={<Releases />} />
+          <Route path="/releases/:category" element={<ReleasesCategory />} />
+          <Route path="/faq" element={<FAQRoute />} />
+          <Route path="/faq/:category" element={<FAQCategory />} />
+          <Route path="/downloads" element={<DownloadsRoute />} />
+          <Route path="/credits" element={<CreditsRoute />} />
+          <Route path="/search" element={<SearchRoute />} />
+          <Route path="*" element={<NotFoundRoute />} />
+        </Routes>
         <Footer></Footer>
       </Router>
     </ReleasesProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;
