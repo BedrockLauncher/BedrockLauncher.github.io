@@ -23,13 +23,29 @@
       border-radius: 4px;
     }
 
+    strong {
+      font-family: 'Noto Sans Bold';
+    }
+
     p {
       padding: 0.4rem 0;
       font-size: 0.9rem;
     }
 
+    h2 {
+      font-size: 1.1rem;
+      padding: 1.1rem 0 0.7rem;
+      font-family: 'Noto Sans Bold';
+    }
+
+    li {
+      font-size: 0.95rem;
+      padding: 0.1rem 0;
+    }
+
     h5 {
       font-size: 0.8rem;
+      font-family: 'Noto Sans';
     }
 
     a {

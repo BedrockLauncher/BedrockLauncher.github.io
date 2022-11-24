@@ -1,43 +1,42 @@
-import { useEffect, useState } from "react"
-import { useHistory, useParams } from "react-router"
-import Docs from "../../../util/Docs"
-import { Converter } from 'showdown'
-import './index.scss'
-import GoBack from "../../../components/GoBack"
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router';
+import { Converter } from 'showdown';
+import GoBack from '../../../components/GoBack';
+import Docs from '../../../util/Docs';
+import './index.scss';
 
 const DocsCategory = () => {
-  const history = useHistory()
-  const { category } = useParams<{ type: string, category: string }>()
-  const categoryInfo = Docs.find(cat => cat.name === category)
-  const [content, setContent] = useState('')
-  if(!categoryInfo) history.push('/docs')
+  const navigate = useNavigate();
+  const { category } = useParams<{ type: string; category: string }>();
+  const categoryInfo = Docs.find((cat) => cat.name === category);
+  const [content, setContent] = useState('');
+  if (!categoryInfo) navigate('/docs');
   else {
-    document.title = categoryInfo.title + ' - Bedrock Launcher'
+    document.title = categoryInfo.title + ' - Bedrock Launcher';
   }
 
-  let markdownConverter = new Converter()
+  let markdownConverter = new Converter();
 
   useEffect(() => {
-    if(categoryInfo && content === '') {
+    if (categoryInfo && content === '') {
       fetch(categoryInfo.url)
-      .then(res => res.text())
-      .then(data => {
-        setContent(markdownConverter.makeHtml(data))
-      })
+        .then((res) => res.text())
+        .then((data) => {
+          setContent(markdownConverter.makeHtml(data));
+        });
     }
-  })
-  
+  });
+
   return (
-    <div className='docs'>
+    <div className="docs">
       <main>
-        <div className='container md-go-back'>
-          <GoBack />
+        <div className="container md-go-back">
+          <GoBack to="/docs" />
         </div>
-        <div className="container md" dangerouslySetInnerHTML={{__html: content}}> 
-        </div>
+        <div className="container md" dangerouslySetInnerHTML={{ __html: content }}></div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default DocsCategory
+export default DocsCategory;

@@ -1,21 +1,21 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   display: none;
   background: #262626;
   right: -100%;
   top: 50px;
   width: 300px;
-  height: calc(100vh - 50px);
+  height: calc(100% - 50px);
   transition: transform 200ms ease;
-  z-index: -1;
-  overflow-y: auto;
+  z-index: 200;
   box-shadow: -2px 0 2px 0 #00000077;
   font-family: 'Noto Sans';
-
+  overflow-y: auto;
+  
   &::-webkit-scrollbar {
     width: 10px;
   }
-
+  
   .container {
     display: flex;
     width: 100%;
@@ -25,7 +25,6 @@
   }
 
   &.open {
-    display: none;
     right: 0;
   }
 

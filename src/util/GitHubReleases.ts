@@ -41,52 +41,52 @@ export interface Uploader {
 }
 
 export interface Asset {
-  url: string
-  id: number
-  node_id: string
-  name: string
-  label?: any
-  uploader: Uploader
-  content_type: string
-  state: string
-  size: number
-  download_count: number
-  created_at: Date
-  updated_at: Date
-  browser_download_url: string
+  url: string;
+  id: number;
+  node_id: string;
+  name: string;
+  label?: any;
+  uploader: Uploader;
+  content_type: string;
+  state: string;
+  size: number;
+  download_count: number;
+  created_at: Date;
+  updated_at: Date;
+  browser_download_url: string;
 }
 
 export interface Reactions {
-  url: string
-  total_count: number
-  '+1': number
-  '-1': number
-  laugh: number
-  hooray: number
-  confused: number
-  heart: number
-  rocket: number
-  eyes: number
+  url: string;
+  total_count: number;
+  '+1': number;
+  '-1': number;
+  laugh: number;
+  hooray: number;
+  confused: number;
+  heart: number;
+  rocket: number;
+  eyes: number;
 }
 
 export default interface GithubReleases {
-  url: string
-  assets_url: string
-  upload_url: string
-  html_url: string
-  id: number
-  author: Author
-  node_id: string
-  tag_name: string
-  target_commitish: string
-  name: string
-  draft: boolean
-  prerelease: boolean
-  created_at: Date
-  published_at: Date
-  assets: Asset[]
-  tarball_url: string
-  zipball_url: string
-  body: string
-  reactions: Reactions
+  url: string;
+  assets_url: string;
+  upload_url: string;
+  html_url: string;
+  id: number;
+  author: Author;
+  node_id: string;
+  tag_name: string;
+  target_commitish: string;
+  name: string;
+  draft: boolean;
+  prerelease: boolean;
+  created_at: Date;
+  published_at: Date;
+  assets: Asset[];
+  tarball_url: string;
+  zipball_url: string;
+  body: string;
+  reactions: Reactions;
 }
