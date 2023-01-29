@@ -5,6 +5,7 @@ import { ReactComponent as TwitterIcon } from "../../../assets/images/icons/twit
 import { ReactComponent as YoutubeIcon } from "../../../assets/images/icons/youtube.svg";
 import logo from "../../../assets/images/logos/logo.png";
 import ButtonText from "../../../components/ButtonText";
+import { downloadWarning } from "../../../components/Navbar/components/SideNavbar";
 import Covers from "../../../util/Covers";
 
 const BannerSection = () => {
@@ -53,6 +54,7 @@ const BannerSection = () => {
           rel="noreferrer"
           target="_blank"
           width={160}
+          onClick={downloadWarning}
         >
           Download
         </ButtonText>
