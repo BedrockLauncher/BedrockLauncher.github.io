@@ -40,7 +40,11 @@ const BannerSection = () => {
       style={{ backgroundImage: "url(" + covers[coverIndex] + ")" }}
     >
       <img src={logo} alt="" className="logo" />
-      <h3>An unofficial Minecraft Bedrock for Windows 10/11 Launcher</h3>
+      <h3>An unofficial Minecraft Bedrock for Windows Launcher</h3>
+      <h3 style={{ color: "gray", fontSize: "0.75rem" }}>
+        ⚠️ Bedrock Launcher does not pirate Minecraft; you need to own a legal
+        copy ⚠️
+      </h3>
 
       <div className="buttons-group0">
         <ButtonText
