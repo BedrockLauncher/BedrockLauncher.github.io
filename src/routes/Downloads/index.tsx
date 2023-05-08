@@ -12,7 +12,7 @@ const DownloadsRoute = () => {
           <div className="button-group">
             <ButtonText
               type="link"
-              to="https://github.com/bedrockLauncher/BedrockLauncher/releases/latest/download/release.zip"
+              to="https://github.com/bedrockLauncher/BedrockLauncher/releases/latest/download/BedrockLauncherSetup.exe"
             >
               Lastest Version
             </ButtonText>
