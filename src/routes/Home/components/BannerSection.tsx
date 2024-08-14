@@ -50,7 +50,7 @@ const BannerSection = () => {
       <div className="buttons-group0">
         <ButtonText
           type="link"
-          to="https://github.com/bedrockLauncher/BedrockLauncher/releases/latest/download/BedrockLauncherSetup.exe"
+          to="https://github.com/bedrockLauncher/BedrockLauncher/releases/latest/"
           rel="noreferrer"
           target="_blank"
           width={160}
